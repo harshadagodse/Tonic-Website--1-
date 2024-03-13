@@ -155,7 +155,7 @@
   max-width: 100%;
 }
 .exceptional-talent-meets-hover{
-  height: 514px;
+  /* height: 514px;
   flex: 1;
   position: relative;
   line-height: 100px;
@@ -164,11 +164,25 @@
   display: inline-block;
   max-width: 100%;
   opacity: 1;
+  overflow: hidden; */
+
+  position: absolute;
+  flex: 1;
+  height: 614px;
+  left: 10%;
+  font-size: 6.5vw;
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-weight: 500;
+  width: 0%;
+  opacity: 1;
+  display: inline-block;
+  /* white-space: rap; */
   overflow: hidden;
+  color: blue;
  
 }
 .exceptional-talent-meets1 {
-  height: 514px;
+  /* height: 514px;
   flex: 1;
   position: relative;
   line-height: 100px;
@@ -177,9 +191,59 @@
   display: inline-block;
   max-width: 100%;
   opacity: .2;
-  overflow: hidden;
+  color: blue;
+  overflow: hidden; */
+
+
+  flex: 1;
+  position: absolute;
+  height: 614px;
+  line-height: 100px;
+  text-transform: uppercase;
+    left: 10%;
+    font-size: 6.5vw;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+    opacity: .2;
+    /* white-space: nowrap; */
+ 
   
 }
+/* .one{
+  position: absolute;
+  left: 10%;
+  font-size: 6.5vw;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  width: 50%;
+  opacity: .2;
+  white-space: nowrap;
+}
+
+.two-hover{
+  position: absolute;
+  left: 10%;
+  font-size: 6.5vw;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  width: 50%;
+  opacity: 1;
+  white-space: nowrap;
+  color: blue;
+}
+
+.final{
+ display: flex;
+ align-items: center;
+ width: 100%;
+ height: 100vh;
+ background-color: white;
+
+
+} */
+
 .exceptional-talent-meets1 {
   /* color: var(--color-white); */
   z-index: 1;
@@ -189,13 +253,21 @@
 .exceptional-talent-meets,
 .exceptional-talent-meets-best,
 .team-members {
+  position: relative;
   display: flex;
+  align-items: center;
+  width: 100%;
+  /* height: 100vh; */
+  /* background-color: #fff; */
+  overflow: hidden;
+  /* display: flex;
   position: relative;
   align-items: center;
-  /* background-color: #fff; */
-  /* justify-content: flex-start; */
+  color: #fff;
+ 
   max-width: 100%;
-  overflow: hidden;
+  overflow: hidden; */
+  
 }
 .team-members {
   align-self: stretch;
@@ -1653,3 +1725,38 @@ hr {
   transform: scaleX(1)
 }
 
+.one{
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+}
+.two{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.text-area{
+  position: absolute;
+  left: 10%;
+  font-size: 6.5vw;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  width: 50%;
+  opacity: .2;
+  white-space: nowrap;
+}
+
+.text-area-hover{
+  position: absolute;
+  left: 10%;
+  font-size: 6.5vw;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  width: 50%;
+  opacity: 1;
+  white-space: nowrap;
+  color: blue;
+}
