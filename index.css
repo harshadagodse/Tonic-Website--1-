@@ -961,7 +961,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-  width: 420.7px;
+  /* width: 420.7px; */
 }
 .test-3 {
   align-self: stretch;
