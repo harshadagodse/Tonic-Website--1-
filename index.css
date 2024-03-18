@@ -32,7 +32,8 @@
   display: inline-block;
   white-space: nowrap;
   z-index: 1;
-  animation: scrollText 30s linear infinite; /* Initial animation duration */
+  padding: 90px;
+  animation: scrollText 10s linear infinite; /* Initial animation duration */
 }
 
 @keyframes scrollText {
@@ -44,9 +45,9 @@
   }
 }
 
-.hover-slow {
+/* .hover-slow {
   animation-play-state: paused;
-}
+} */
 .fully-equipped-recording {
   width: 300px;
   position: relative;
@@ -136,9 +137,10 @@
 }
 .recordings-studios {
   width: 1398px;
+  align-self: center;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 0 var(--padding-xl) var(--padding-40xl);
   box-sizing: border-box;
@@ -418,11 +420,12 @@
   gap: var(--gap-xl);
 }
 .frame-wrapper {
-  width: 1427px;
+  width: 100%;
   justify-content: center;
   padding: var(--padding-19xl) var(--padding-169xl) var(--padding-21xl) 178px;
   box-sizing: border-box;
   gap: var(--gap-xl);
+  transition: background-color 0.3s ease;
 }
 .frame-wrapper:hover {
   background-color: #3532d1; /* Change the background color on hover */
@@ -498,12 +501,13 @@
   font-size: var(--font-size-lg);
 }
 .get-in-touch {
-  flex: 0.7453;
+  flex: 1;
   background-color: var(--color-black);
   justify-content: space-between;
   padding: var(--padding-19xl) var(--padding-169xl) var(--padding-21xl) 178px;
   box-sizing: border-box;
   gap: var(--gap-xl);
+  transition: background-color 0.3s ease;
 }
 .get-in-touch:hover {
   background-color: #3532d1; /* Change the background color on hover */
@@ -618,9 +622,11 @@
   justify-content: center;
   padding: 0 var(--padding-xl) var(--padding-10xs);
   box-sizing: border-box;
+  transition: background-color 0.3s ease;
 }
-.frame-container:hover {
-  background-color: #3532d1; /* Change the background color on hover */
+.frame-container:hover,
+.frame-container.scrolled {
+  background-color: #3532d1; /* Change the background color on hover or scroll */
 }
 .vector-icon {
   height: 0.3px;
@@ -629,6 +635,13 @@
   max-width: 100%;
   overflow: hidden;
 }
+/* .frame-parent 
+.what-people-are-saying {
+  align-self: center;
+  
+} */
+
+
 .frame-parent,
 .vector-container,
 .what-people-are-saying {
@@ -969,10 +982,13 @@
   padding: 47.90000000000009px var(--padding-2xl) 41.19999999999982px;
   gap: 77.5px;
   z-index: 1;
+  transition: background-color 0.3s ease;
 }
+
 .test-3:hover {
   background-color: blue; /* Change background color to blue on hover */
 }
+
 .test-3-wrapper {
   flex: 1;
   padding: 0 20.999999999999886px 0 0;
@@ -1067,7 +1083,7 @@
   font-size: var(--font-size-3xl);
 }
 .ajinkya-neman-parent {
-  align-self: stretch;
+  align-self: center;
   height: 445.5px;
   flex-direction: row;
   position: relative;
@@ -1411,9 +1427,14 @@
     gap: 0 41px;
     min-width: 100%;
   }
-  .frame-parent {
-    gap: 18px 0;
-  }
+  /* .frame-parent {
+    align-self: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+    
+  } */
   .what-people-are-saying {
     gap: 39px 0;
     padding-bottom: 129px;
@@ -1881,7 +1902,7 @@ hr {
   width: 100%;
   height: 1000vh;
   font-family: var(--font-space-grotesk);
-  animation: scrollText 50s linear infinite;
+  animation: scrollText 2s linear infinite;
 }
 
 @keyframes scrollText {
@@ -1896,3 +1917,85 @@ hr {
 .hover-slow {
   animation-play-state: paused;
 }
+
+
+/* this is line efffect css */
+
+.container {
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  direction: rtl;
+}
+
+.rows {
+  display: block;
+  justify-content: space-between;
+}
+
+.cols {
+  flex: none;
+  margin: 0 5px;
+}
+
+.desc {
+  text-align: center;
+}
+
+.apl_lnk {
+  text-decoration: none;
+  color: #333;
+}
+
+.ln_v,
+.ln_h {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.sap_btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sap_btn:hover {
+  background-color: #0056b3;
+}
+
+.apl_r_ln_h {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.smooth-content {
+  overflow: visible;
+  width: 100%;
+  /* set a height because the contents are position: absolute, thus natively there's no height */
+  height: 4000px;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,.07) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,.07) 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+/* .scrolldown {
+	width: 1px; height: 60px; position: absolute; bottom: 20px; left: 0; right: 0; margin: 0 auto; overflow: hidden; background: linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0) 50%); background-position: 0 -60px; background-size: 100% 200%; animation: scrolldown 5.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+	}
+@keyframes scrolldown {
+  0% { background-position: 0 -60px; }
+  75% { background-position: 0 0; }
+  100% { background-position: 0 60px; }
+} */

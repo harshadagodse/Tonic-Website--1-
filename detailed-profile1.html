@@ -82,11 +82,11 @@
           <div class="footer-text-parent">
             <div class="footer-text">
               <div class="rectangle-parent9">
-                <textarea class="frame-child14" rows="{7}" cols="{11}">
+                <textarea class="frame-child14" rows="7" cols="11">
                 </textarea>
                 <div class="frame-wrapper15">
                   <div class="project-01-parent">
-                    <b class="project-011">Project 01</b>
+                    <b class="project-011" onclick="toggleText()">Project 01</b>
                     <div class="connect-easily-through-wifi-6-wrapper2">
                       <div class="connect-easily-through20">
                         Connect easily through WiFi 6 and stream highest-quality
@@ -98,7 +98,25 @@
                 </div>
               </div>
             </div>
-            <div class="rectangle-parent10">
+            <div class="footer-text">
+              <div class="rectangle-parent9">
+                <textarea class="frame-child14" rows="{7}" cols="{11}">
+                </textarea>
+                <div class="frame-wrapper15">
+                  <div class="project-01-parent">
+                    <b class="project-011">Project 02</b>
+                    <div class="connect-easily-through-wifi-6-wrapper2">
+                      <div class="connect-easily-through20">
+                        Connect easily through WiFi 6 and stream highest-quality
+                        audio from anywhere in your home. The platforms you love
+                        now.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="rectangle-parent10">
               <div class="frame-child15"></div>
               <div class="instagram-icon">
                 <div class="twitter-icon">
@@ -127,7 +145,7 @@
                 alt=""
                 src="./public/vector-7.svg"
               />
-            </div>
+            </div> -->
             <div class="line-vector">
               <img
                 class="line-vector-child"
@@ -289,5 +307,15 @@
         });
       }
       </script>
+      <script>
+        function toggleText() {
+          var textDiv = document.querySelector('.connect-easily-through20');
+          if (textDiv.style.display === 'none' || textDiv.style.display === '') {
+            textDiv.style.display = 'block';
+          } else {
+            textDiv.style.display = 'none';
+          }
+        }
+        </script>
   </body>
 </html>
