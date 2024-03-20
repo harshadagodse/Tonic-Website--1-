@@ -2,7 +2,7 @@
 window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;
   var animationDuration = 20 + scrollPosition * 0.01; // Adjust the factor as needed
-  document.querySelector('.tonic-the-sound').style.animationDuration = animationDuration + 's';
+  document.querySelector('.tonic-the-sound').style.animationDuration = animationDuration ;
 });
 // document.querySelector('.tonic-the-sound').addEventListener('mouseenter', function() {
 //   this.classList.add('hover-slow');
@@ -21,7 +21,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;
   var animationDuration = 5 + scrollPosition * 0.01; // Adjust the factor as needed
-  document.querySelector('.scrolling-text').style.animationDuration = animationDuration + 's';
+  document.querySelector('.scrolling-text').style.animationDuration = animationDuration;
 });
 
 // document.querySelector('.scrolling-text').addEventListener('mouseenter', function() {
