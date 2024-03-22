@@ -23,8 +23,8 @@
   position: absolute;
   margin: 0 !important;
   top: 815px;
-  left: -3207px;
-  font-size: 200px;
+  right: -3207px;
+  font-size: 320px;
   line-height: 170px;
   font-weight: 500;
   font-family: var(--font-space-grotesk);
@@ -34,17 +34,18 @@
   white-space: nowrap;
   z-index: 1;
   padding: 90px;
-  animation: scrollText 40s linear infinite; /* Initial animation duration */
+  animation: scrollText1 3s linear infinite; /* Initial animation duration */
 
 }
 
-@keyframes scrollText {
+@keyframes scrollText1 {
   from {
-    transform: translateX(-0%);
+    transform: translateX(12%);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
+  
 }
 
 .big_txt {
@@ -409,7 +410,7 @@
 .sachin-puthran-and-ajinkya-nem {
   width: 246px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-7xl) 0 0;
@@ -420,6 +421,7 @@
   position: relative;
   line-height: 25px;
   font-weight: 300;
+  text-align: left;
 }
 .services-studios-team-contact {
   flex: 1;
@@ -1908,7 +1910,7 @@ hr {
 .team-members > p > div{
   background: linear-gradient(
     to right,
-    rgb(248, 244, 244) 50%,
+    rgb(53, 50, 209) 50%,
     rgb(37, 37, 37) 50%
   );
   background-size: 200% 100%;
@@ -1918,7 +1920,7 @@ hr {
   -webkit-background-clip: text;
   /*   margin-bottom: -250px; */
   margin-left: 50px;
-  line-height: 1.2;
+  line-height: 1;
   /*   outline: 6px dotted teal; */
   font-size: 100px;
   /* margin-top: 60px; */
@@ -2112,6 +2114,7 @@ button:hover {
   border: 0; 
   padding: 10px; 
   height: 500px;
+  background-color: black;
 } 
 
 .gfg { 
@@ -2121,5 +2124,197 @@ button:hover {
 
 .map-div { 
   height: 500px;
-  background-color: rgb(152, 178, 234); 
+  background-color: rgb(5, 5, 5); 
 }
+
+.contact-info, .social-media {
+  margin-bottom: 30px;
+  background-color: rgb(5, 5, 5);
+  width: 100%;
+  color: white;
+}
+
+.contact-info h1, .social-media h2 {
+  margin-top: 5%;
+  text-align: center;
+  font-size: var(--font-size-81xl);
+  color: var(--color-white);
+  font-family: var(--font-space-grotesk);
+}
+
+.contact-info ul, .social-media ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info ul li, .social-media ul li {
+  margin-bottom: 10px;
+}
+
+.contact-info ul li strong {
+  font-weight: bold;
+}
+
+.container {
+  /* max-width: 100% ; */
+	width: 100%;
+	/* margin-left: auto;
+	margin-right: auto;
+	padding-left: 60px;
+	padding-right: 60px; */
+	
+	
+}
+
+.cnt_dbl_top {
+	margin: 6.302vw;
+	position: relative;
+}
+
+@media(max-width: 760px) {
+	.cnt_dbl_top {
+		margin: 143px 0 0;
+	}
+}
+
+.rows {
+	display: flex;
+	position: relative;
+	height: 11.771vw;
+	justify-content: space-between;
+}
+
+@media(max-width: 760px) {
+	.rows {
+		height: auto;
+		flex-wrap: wrap;
+		padding: 53px 0 65px;
+	}
+}
+
+.cols {
+	width: 50%;
+	position: relative;
+	height: 100%;
+}
+
+@media(max-width: 760px) {
+	.cols {
+		width: 100%;
+		height: auto;
+	}
+	.cols.cols02 {
+		margin-top: 42px;
+	}
+}
+
+.desc {
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0;
+}
+
+.t {
+	color: rgba(169, 171, 181, 0.40);
+	font: normal 0.938vw/0.938vw ;
+	letter-spacing: -0.028vw;
+	margin: 0 0 0.573vw;
+}
+
+@media(max-width: 1280px) {
+	.t {
+		font: normal 0.938vw/0.938vw ;
+	}
+}
+
+@media(max-width: 1024px) {
+	.t {
+		font: normal 1.172vw/1.172vw ;
+	}
+}
+
+@media(max-width: 760px) {
+	.t {
+		font: normal 14px/14px ;
+		margin: 0 0 8px;
+	}
+}
+
+.bt a {
+	color: #fff;
+	font: normal 2.24vw/2.24vw;
+	letter-spacing: -0.101vw;
+}
+
+@media(max-width: 760px) {
+	.bt a {
+		font: normal 23px/28px ;
+		letter-spacing: -0.575px;
+	}
+}
+
+.ln_h {
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	height: 1px;
+}
+
+.ln_h.cdt_ln_t_h {
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.ln_h.cdt_ln_b_h {
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.ln_h span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: #515258;
+	transform: scaleX(0);
+	transform-origin: 50% 50%;
+}
+
+.cdt_ln_v {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1px;
+	height: 100%;
+}
+
+@media(max-width: 760px) {
+	.cdt_ln_v {
+		opacity: 0;
+	}
+}
+
+.cdt_ln_v span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: #515258;
+	transform: scaleY(0);
+	transform-origin: 0% 0%;
+}
+
+
+
+
+.ln_v,
+.ln_h {
+  border: 1px  #ccc;
+  margin-top: 0px;
+}
+
