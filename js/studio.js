@@ -27,10 +27,7 @@ const allPhotos = gsap.utils.toArray(".image-rectangle")
 //trigger photo animation when headline of each details section 
 //reaches 80% of window height
 details.forEach((detail, index)=> {
-
 	let headline = detail.querySelector("h3")
-    console.log(headline);
-    console.log(photos[index]);
 	let animation = gsap.timeline()
         .to(photos[index], { yPercent: 0, opacity:1})
         .set(allPhotos[index], {opacity:1});
