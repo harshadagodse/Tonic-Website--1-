@@ -5,6 +5,12 @@ window.addEventListener('scroll', function() {
   document.querySelector('.tonic-the-sound').style.animationDuration = animationDuration + 's';
 });
 
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  var animationDuration = 20 + scrollPosition * 0.01; // Decrease the animation duration as you scroll down
+  document.querySelector('.get-in-touch1').style.animationDuration = animationDuration + 's';
+});
+
 // document.querySelector('.tonic-the-sound').addEventListener('mouseenter', function() {
 //   this.classList.add('hover-slow');
 // });

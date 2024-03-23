@@ -2318,3 +2318,63 @@ button:hover {
   margin-top: 0px;
 }
 
+
+
+/* Styles for .scroller */
+.scroller {
+  height: 100vh;
+
+  @media(max-width: 760px) {
+      height: auto;
+  }
+}
+
+/* Styles for .container */
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 3rem;
+  background-color: black;
+
+  @media(max-width: 1440px) {
+      padding: 0 2rem;
+  }
+
+  @media(max-width: 760px) {
+      padding: 0 1rem;
+  }
+}
+
+.get-in-touch1
+ {
+  width: 6220px;
+  height: 261px;
+  position: absolute;
+  margin: 0 !important;
+  top: 815px;
+  right: -3207px;
+  font-size: 320px;
+  line-height: 170px;
+  font-weight: 500;
+  font-family: var(--font-space-grotesk);
+  color: #3532d1;
+  text-align: left;
+  display: inline-block;
+  white-space: nowrap;
+  z-index: 1;
+  padding: 90px;
+  animation: scrollText1 3s linear infinite; /* Initial animation duration */
+
+}
+
+@keyframes scrollText1 {
+  from {
+    transform: translateX(12%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+  
+}
