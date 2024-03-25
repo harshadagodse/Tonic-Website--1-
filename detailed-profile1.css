@@ -776,7 +776,7 @@
   align-items: center;
   padding: 0 var(--padding-10xs) 99px 0;
   box-sizing: border-box;
-  gap: 79px 0;
+  gap: 5px 0;
   text-align: left;
   font-size: var(--font-size-base);
   color: var(--color-white);
@@ -1137,7 +1137,7 @@
 .project-01-parent {
   display: none;
   /* Adjust the expanded size */
-  width: 100%; /* Example width */
+  width: 30%; /* Example width */
   height: 300px; /* Example height */
 }
 

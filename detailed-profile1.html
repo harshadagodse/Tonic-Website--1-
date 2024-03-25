@@ -61,7 +61,8 @@
           <div class="all">All</div>
         </div>
       </div> -->
-      <div id="footerContent1" class="footer-text-parent" onclick="toggleContent('project01')">
+      <div id="footerContent1" class="footer-text-parent" onclick="toggleContent('project01', 'footerContent1')">
+      <!-- <div id="footerContent1" class="footer-text-parent" onclick="toggleContent('project01')"> -->
         <div class="footer-text">
             <div class="rectangle-parent9">
                 <!-- Only show the image initially -->
@@ -151,8 +152,8 @@
               </div>
           </div>
       </div> -->
-      
-      <div id="footerContent2" class="footer-text-parent" onclick="toggleContent('project02')">
+      <div id="footerContent2" class="footer-text-parent" onclick="toggleContent('project02', 'footerContent2')">
+      <!-- <div id="footerContent2" class="footer-text-parent" onclick="toggleContent('project02')"> -->
         <div class="footer-text">
             <div class="rectangle-parent9">
                 <!-- Only show the image initially -->
@@ -180,8 +181,8 @@
     </div>
       
 
-      
-    <div id="footerContent3" class="footer-text-parent" onclick="toggleContent('project03')">
+    <div id="footerContent3" class="footer-text-parent" onclick="toggleContent('project03', 'footerContent3')">
+    <!-- <div id="footerContent3" class="footer-text-parent" onclick="toggleContent('project03')"> -->
       <div class="footer-text">
           <div class="rectangle-parent9">
               <!-- Only show the image initially -->
@@ -230,8 +231,8 @@
           </div>
       </div>
   </div>-->
-
-  <div id="footerContent4" class="footer-text-parent" onclick="toggleContent('project04')">
+  <div id="footerContent4" class="footer-text-parent" onclick="toggleContent('project04', 'footerContent4')">
+  <!-- <div id="footerContent4" class="footer-text-parent" onclick="toggleContent('project04')"> -->
     <div class="footer-text">
         <div class="rectangle-parent9">
             <!-- Only show the image initially -->
@@ -278,7 +279,8 @@
         </div>
     </div>
   </div> -->
-  <div id="footerContent5" class="footer-text-parent" onclick="toggleContent('project05')">
+  <div id="footerContent5" class="footer-text-parent" onclick="toggleContent('project05', 'footerContent5')">
+  <!-- <div id="footerContent5" class="footer-text-parent" onclick="toggleContent('project05')"> -->
     <div class="footer-text">
         <div class="rectangle-parent9">
             <!-- Only show the image initially -->
@@ -304,7 +306,9 @@
         </div>
     </div>
 </div>
-<div id="footerContent6" class="footer-text-parent" onclick="toggleContent('project06')">
+
+<div id="footerContent6" class="footer-text-parent" onclick="toggleContent('project06', 'footerContent6')">
+<!-- <div id="footerContent6" class="footer-text-parent" onclick="toggleContent('project06')"> -->
   <div class="footer-text">
       <div class="rectangle-parent9">
           <!-- Only show the image initially -->
@@ -330,7 +334,8 @@
       </div>
   </div>
 </div>
-<div id="footerContent7" class="footer-text-parent" onclick="toggleContent('project07')">
+<div id="footerContent7" class="footer-text-parent" onclick="toggleContent('project07', 'footerContent7')">
+<!-- <div id="footerContent7" class="footer-text-parent" onclick="toggleContent('project07')"> -->
   <div class="footer-text">
       <div class="rectangle-parent9">
           <!-- Only show the image initially -->
@@ -676,7 +681,7 @@
   }
   </script> -->
 
-  <script>
+  <!-- <script>
     let prevProjectId = null;
     let prevvideoId = null;
     let prevImageId = null;
@@ -761,8 +766,84 @@
         prevImageId = image;
         prevvideoId = videoFrame;
     }
-</script>
+</script> -->
+<!-- <script>
+  let prevProjectId = null;
+  let prevVideoId = null;
+  let prevImageId = null;
 
+  function toggleContent(projectId) {
+      const project = document.getElementById(projectId);
+      const additionalInfo = project.nextElementSibling;
+      const videoFrame = document.getElementById('videoFrame' + projectId.slice(-1));
+
+      if (prevProjectId && prevProjectId !== projectId) {
+          const prevProject = document.getElementById(prevProjectId);
+          prevProject.style.display = 'none';
+          prevProject.nextElementSibling.style.display = 'block';
+
+          // Reset image size of the previously opened project
+          const prevImage = document.getElementById('image' + prevProjectId.slice(-1));
+          if (prevImage) {
+              prevImage.style.display = 'block';
+          }
+
+          // Hide the previous video frame
+          if (prevVideoId) {
+              prevVideoId.style.display = 'none';
+          }
+      }
+
+      // Toggle display of the clicked project and additional info
+      if (project.style.display === 'none') {
+          project.style.display = 'block';
+          additionalInfo.style.display = 'none';
+      } else {
+          project.style.display = 'none';
+          additionalInfo.style.display = 'block';
+      }
+
+      if (videoFrame) {
+          if (videoFrame.style.display === 'none') {
+              videoFrame.style.display = 'block';
+              videoFrame.style.width = '800px'; // Set video width
+              videoFrame.style.height = '400px'; // Set video height
+
+              // Hide image associated with the video
+              const image = document.getElementById('image' + projectId.slice(-1));
+              if (image) {
+                  image.style.display = 'none';
+              }
+
+              // Set the video information text
+              const connectEasilyThrough20 = document.querySelector('.connect-easily-through20');
+              connectEasilyThrough20.innerHTML = 'Connect easily through WiFi 6 and stream highest-quality audio from anywhere in your home. The platforms you love now.';
+
+              // Remember the current video frame
+              prevVideoId = videoFrame;
+          } else {
+              // Hide the video frame
+              videoFrame.style.display = 'none';
+
+              // Show the associated image
+              const image = document.getElementById('image' + projectId.slice(-1));
+              if (image) {
+                  image.style.display = 'block';
+              }
+
+              // Reset the video information text
+              const connectEasilyThrough22 = document.querySelector('.connect-easily-through22');
+              connectEasilyThrough22.innerHTML = 'Connect easily through WiFi 6 and stream highest-quality audio from anywhere in your home. The platforms you love now.';
+
+              // Reset the video frame size
+              videoFrame.style.width = '300px';
+              videoFrame.style.height = '200px';
+          }
+      }
+
+      prevProjectId = projectId;
+  }
+</script> -->
 
     
     
@@ -802,6 +883,103 @@ function raf(time) {
 requestAnimationFrame(raf)
 
   </script> 
+
+<script>
+  let prevProjectId = null;
+  let prevFooterContentId = null; // Variable to store the previous footer content ID
+
+  function toggleContent(projectId, footerContentId) {
+      const project = document.getElementById(projectId);
+      const additionalInfo = project.nextElementSibling;
+      const videoFrame = document.getElementById('videoFrame' + projectId.slice(-1));
+      const footerContent = document.getElementById(footerContentId); // Get footer content element using provided ID
+
+      // Toggle background color of current footer content
+      if (footerContent.style.backgroundColor !== 'blue') {
+          // Change background color to blue if not already blue
+          footerContent.style.backgroundColor = 'blue';
+      } else {
+          // Change background color to black if already blue
+          footerContent.style.backgroundColor = 'black';
+      }
+
+      if (prevProjectId && prevProjectId !== projectId) {
+          // Reset background color of previous footer content
+          const prevFooterContent = document.getElementById(prevFooterContentId);
+          if (prevFooterContent) {
+              prevFooterContent.style.backgroundColor = 'black';
+          }
+
+          // Hide the previous project and display its additional info
+          const prevProject = document.getElementById(prevProjectId);
+          prevProject.style.display = 'none';
+          prevProject.nextElementSibling.style.display = 'block';
+
+          // Reset image size of the previously opened project
+          const prevImage = document.getElementById('image' + prevProjectId.slice(-1));
+          if (prevImage) {
+              prevImage.style.display = 'block';
+          }
+
+          // Hide the previous video frame
+          if (prevVideoId) {
+              prevVideoId.style.display = 'none';
+          }
+      }
+
+      // Toggle display of the clicked project and additional info
+      if (project.style.display === 'none') {
+          project.style.display = 'block';
+          additionalInfo.style.display = 'none';
+      } else {
+          project.style.display = 'none';
+          additionalInfo.style.display = 'block';
+      }
+
+      if (videoFrame) {
+          if (videoFrame.style.display === 'none') {
+              videoFrame.style.display = 'block';
+              videoFrame.style.width = '800px'; // Set video width
+              videoFrame.style.height = '400px'; // Set video height
+
+              // Hide image associated with the video
+              const image = document.getElementById('image' + projectId.slice(-1));
+              if (image) {
+                  image.style.display = 'none';
+              }
+
+              // Set the video information text
+              const connectEasilyThrough20 = document.querySelector('.connect-easily-through20');
+              connectEasilyThrough20.innerHTML = 'Connect easily through WiFi 6 and stream highest-quality audio from anywhere in your home. The platforms you love now.';
+
+              // Remember the current video frame
+              prevVideoId = videoFrame;
+          } else {
+              // Hide the video frame
+              videoFrame.style.display = 'none';
+
+              // Show the associated image
+              const image = document.getElementById('image' + projectId.slice(-1));
+              if (image) {
+                  image.style.display = 'block';
+              }
+
+              // Reset the video information text
+              const connectEasilyThrough22 = document.querySelector('.connect-easily-through22');
+              connectEasilyThrough22.innerHTML = 'Connect easily through WiFi 6 and stream highest-quality audio from anywhere in your home. The platforms you love now.';
+
+              // Reset the video frame size
+              videoFrame.style.width = '300px';
+              videoFrame.style.height = '200px';
+          }
+      }
+
+      prevProjectId = projectId;
+      prevFooterContentId = footerContentId; // Update the previous footer content ID
+  }
+</script>
+
+
 
 
 
