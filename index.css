@@ -2317,26 +2317,27 @@ hr {
 
 } */
 
-.team-members>p>div {
-  background: linear-gradient(to right,
-      rgb(53, 50, 209) 50%,
-      rgb(37, 37, 37) 50%);
+/* .team-members > p > div{
+  background: linear-gradient(
+    to right,
+    rgb(53, 50, 209) 50%,
+    rgb(37, 37, 37) 50%
+  );
   background-size: 200% 100%;
   background-position-x: 100%;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  /*   margin-bottom: -250px; */
+  /*   margin-bottom: -250px;
   margin-left: 50px;
   line-height: 1;
-  /*   outline: 6px dotted teal; */
+  /*   outline: 6px dotted teal; 
   font-size: 100px;
-  /* margin-top: 60px; */
-
-
-}
-
-.what-people-are-saying-text {
+  /* margin-top: 60px; 
+  
+  
+} */
+.what-people-are-saying-text{
   white-space: nowrap;
   overflow: hidden;
   position: relative;
@@ -2765,7 +2766,7 @@ button:hover {
   }
 }
 
-.get-in-touch1
+/* .get-in-touch1
  {
   width: 6220px;
   height: 261px;
@@ -2783,7 +2784,7 @@ button:hover {
   white-space: nowrap;
   z-index: 1;
   padding: 90px;
-  animation: scrollText1 3s linear infinite; /* Initial animation duration */
+  animation: scrollText1 3s linear infinite; /
 
 }
 
@@ -2795,4 +2796,23 @@ button:hover {
     transform: translateX(-100%);
   }
   
-}
+} */
+
+
+/* 
+  p {
+      font-size: clamp(2rem, 5vw, 8rem);
+  } */
+
+  &:nth-of-type(1) {
+      border-bottom: 1px solid rgb(20, 126, 20);
+  }
+
+  /* &:nth-of-type(3) {
+      background: #ffff00;
+  } */
+
+  &:nth-of-type(4) {
+      background: rgb(204, 25, 25);
+      color: white;
+  }

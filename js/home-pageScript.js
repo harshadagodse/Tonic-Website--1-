@@ -51,23 +51,25 @@ window.addEventListener('scroll', function() {
 //   });
 // });
 
-gsap.config({ trialWarn: false });
-gsap.registerPlugin(ScrollTrigger, SplitText);
-const split = new SplitText("p", { type: "lines" });
-split.lines.forEach((target) => {
-  gsap.to(target, {
-    backgroundPositionX: 0,
-    ease: "none",
-    scrollTrigger: {
-      trigger: target,
-      // markers: true,
-      scrub: 1,
-      start: "top center",
-      end: "bottom center"
-    }
+// gsap.config({ trialWarn: false });
+// console.clear();
+// gsap.registerPlugin(ScrollTrigger, SplitText);
+// const split = new SplitText("p", { type: "lines" });
+// console.log("split.lines", split.lines);
+// split.lines.forEach((target) => {
+//   gsap.to(target, {
+//     backgroundPositionX: 0,
+//     ease: "none",
+//     scrollTrigger: {
+//       trigger: target,
+//       // markers: true,
+//       scrub: 1,
+//       start: "top center",
+//       end: "bottom center"
+//     }
 
-  });
-});
+//   });
+// });
 
 
 
@@ -85,98 +87,41 @@ function raf(time) {
 requestAnimationFrame(raf)
 
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-ScrollTrigger.normalizeScroll(true)
+gsap.registerPlugin(ScrollTrigger)
 
-// create the smooth scroller FIRST!
-let smoother = ScrollSmoother.create({
-  smooth: 2,
-  effects: true,
-  normalizeScroll: true
-});
+const splitTypes = document.querySelectorAll('.team-members')
 
-// pin box-c when it reaches the center of the viewport, for 300px
-ScrollTrigger.create({
-  trigger: ".smooth-content",
-  pin: true,
-  start: "center center",
-  end: "+=300",
-  markers: true
-});
+splitTypes.forEach((char,i) => {
 
-// document.querySelector("button").addEventListener("click", e => {
-//   // scroll to the spot where .box-c is in the center.
-//   // parameters: element, smooth, position
-//   smoother.scrollTo(".smooth-content", true, "center center");
-  
-//   // or you could animate the scrollTop:
-//   // gsap.to(smoother, {
-//   //  scrollTop: smoother.offset(".box-c", "center center"),
-//   //  duration: 1
-//   // });
-// });
+    const bg = char.dataset.bgColor
+    const fg = char.dataset.fgColor
 
+    const text = new SplitType(char, { types: 'chars'})
 
-//FOR MARQUEE
-gsap.registerPlugin(ScrollTrigger);
-
-let tl = gsap.timeline();
-let marquee = document.querySelector(".marquee");
-let content = document.querySelector(".marquee__content");
-let items = document.querySelectorAll(".marquee__item");
-let tlLength = items.length * 2;
-
-// animation timeline
-tl.to(".marquee__content", tlLength, {
-  xPercent: -100,
-  repeat: -1,
-  ease: "none"
-});
-
-let currentScale = 1;
-let scaleTl;
-
-// scroll trigger
-ScrollTrigger.create({
-  markers: true,
-  trigger: marquee,
-  scrub: 1,
-  onUpdate: (self) => {
-    console.log(self.direction)
-    if (self.direction == 1) {
-      isUpdated = true;
-      let tScale = self.getVelocity() / 200;
-      if (tScale > currentScale) {
-        currentScale = tScale;
-        scaleTl && scaleTl.kill();
-        scaleTl = gsap
-          .timeline({
-            deafults: {
-              ease: "power2.out"
-            },
-            onComplete: () => {
-              currentScale = 1;
-              scaleTl.kill();
+    gsap.fromTo(text.chars, 
+        {
+            color: bg,
+        },
+        {
+            color: fg,
+            duration: 0.3,
+            stagger: 0.02,
+            scrollTrigger: {
+                trigger: char,
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: true,
+                markers: false,
+                toggleActions: 'play play reverse reverse'
             }
-          })
-          .to(tl, {
-            duration: 0.1,
-            timeScale: tScale,
-              ease: "power2.out"
-          })
-          .to(
-            tl,
-            {
-              timeScale: 1,
-              duration: 0.5,
-              ease: "none"
-            },
-            "+=0.3"
-          );
-      }
-    }
-  }
-});
+    })
+})
+
+
+
+
+
+
 
 
