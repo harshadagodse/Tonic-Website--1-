@@ -97,8 +97,10 @@
                 <div class="sachin-puthran-group">
                   <h1 class="sachin-puthran2">
                     <p class="sachin2">Sachin</p>
-                    <p class="puthran2">Puthran</p>
-                  </h1>
+                    <p class="puthran2">Puthran</p> <span class="line_h"></span>
+                  </h1>1
+                   
+                <div class="lines is-inview" data-scroll="" data-scroll-speed="-1" style="translate: none;rotate: none;scale: none;transform: translate3d(0px, -6.3686px, 0px);"><div class="line"></div><div class="dottedLine"><svg viewBox="0 0 853 1"><line class="cls-1" y1=".5" x2="853" y2=".5" fill="#fffff"></line></svg></div></div>
                   <div class="connect-easily-through10">
                     Connect easily through WiFi 6 and stream highest-quality
                     audio from anywhere in your home. The platforms you love
@@ -286,6 +288,24 @@
         </div>
       </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script>TweenLite.defaultEase = Linear.easeNone;
+
+
+      //show the square only once js has run
+      //visibility set to hidden in css panel
+      TweenLite.set(".square", {visibility:"visible"});
+      
+      
+      
+      var tl = new TimelineLite();
+      tl.fromTo(".l1", 1, {height:0}, {height:200})
+      .fromTo(".line_h", 2, {width:0, backgroundColor:"red"}, {width:200, backgroundColor:"blue"})
+        .fromTo(".l3", 1, {height:0}, {height:200})
+        .fromTo(".l4", 1, {width:0}, {width:200})
+      
+      tl.timeScale(4) //play faster</script>
 
     <script>
       var tonicWhite1Image = document.getElementById("tonicWhite1Image");

@@ -1,3 +1,49 @@
+/* Vertical Line */
+.cdt_ln_v {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.cdt_ln_v span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #ffffff;
+  transform: scaleY(0);
+  transform-origin: 0% 0%;
+  transition: transform 0.5s ease;
+}
+
+/* Horizontal Line */
+.line_h {
+  position: absolute;
+  background: transparent;
+  width: 0px;
+  height: 0px;
+  /*give each border a background color of black in css so that you don't need to animate it*/
+  background-color:black;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  width: 1px;
+}
+/* 
+.cdt_ln_h span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #ffffff;
+  transform: scaleX(1);
+  transform-origin: 0% 0%;
+  transition: transform 5s ease;
+} */
+
+
 .tom-pottiger-yxzl9lnxsna-unspl-icon3 {
   height: 100%;
   width: 1436px;
