@@ -515,6 +515,7 @@
   
 }*/
 .team-members {
+  /* line-height: 0.5; */
   align-self: stretch;
   flex-direction: row;
 }
@@ -581,6 +582,17 @@
   overflow: hidden;
 }
 
+.teamimg{
+  /* height: 0.3px; */
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 100%;
+  /* border: 3px solid black;  */
+
+}
+
 .vector-wrapper {
   align-self: stretch;
   height: 8px;
@@ -639,7 +651,7 @@
   height: 134px;
   width: 134px;
   position: relative;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: var(--color-gainsboro-100);
   min-width: 134px;
 }
