@@ -36,7 +36,7 @@ footer {
 
 .container {
   display: flex;
-  width: 400vw; /*update when image count chnaged */
+  width: 300vw; /*update when image count chnaged */
 
   .col {
       display: flex;
@@ -213,6 +213,12 @@ li {
   object-fit: cover;
   cursor: pointer;
   z-index: 1;
+  /* height: 94px;
+  width: 133px;
+  position: relative;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 1; */
 }
 
 .contact10,
@@ -275,15 +281,12 @@ li {
 }
 
 .rectangle-parent12 {
-  align-self: stretch;
-  height: 150px;
+  flex: 1;
   flex-direction: row;
   justify-content: center;
   padding: var(--padding-11xl) var(--padding-xl) var(--padding-7xl);
-  position: sticky;
-  gap: var(--gap-642xl);
-  top: 0;
-  z-index: 99;
+  gap: 0 661px;
+  z-index: 2;
 }
 
 .connect-easily-through25,
