@@ -81,6 +81,7 @@
     bottom: 0px;
     align-self: stretch;
     width: 116.8px;
+    height: 116.8px;
     position: relative;
     background-color: var(--color-gainsboro-100);
   }
@@ -549,6 +550,8 @@
   text-align: left;
   font-size: var(--font-size-81xl);
   color: #202020;
+  font-weight: 500;
+  line-height: 100%;
   font-family: var(--font-space-grotesk);
 }
 
@@ -572,6 +575,7 @@
   padding: var(--padding-xl);
   box-sizing: border-box;
   max-width: 100%;
+  padding-top: 100px;
 }
 
 .frame-child {
@@ -652,7 +656,6 @@
   width: 134px;
   position: relative;
   border-radius: 100%;
-  background-color: var(--color-gainsboro-100);
   min-width: 134px;
 }
 

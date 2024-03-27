@@ -106,7 +106,7 @@ splitTypes.forEach((char,i) => {
         {
             color: fg,
             duration: 0.3,
-            stagger: 0.02,
+            stagger: 1.5,
             scrollTrigger: {
                 trigger: char,
                 start: 'top 80%',
