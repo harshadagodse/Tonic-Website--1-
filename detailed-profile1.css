@@ -323,7 +323,7 @@
   gap: var(--gap-xl);
 }
 .footer-text {
-  width: 100%;
+  width: 1500px;
   justify-content: flex-start;
   padding: 0 0 var(--padding-13xl) var(--padding-xl);
  
@@ -769,7 +769,7 @@
   align-items: flex-end;
   justify-content: flex-start;
   gap: 29px 0;
-  width: 100%;
+  max-width: 100%;
   font-size: var(--font-size-3xl);
 }
 .project-rectangle {
