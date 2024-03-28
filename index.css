@@ -44,6 +44,7 @@
     min-width: 251px;
   }
 
+ 
   .swiper-slide {
     text-align: left;
     display: flex;
@@ -204,7 +205,7 @@
   white-space: nowrap;
   z-index: 1;
   padding: 90px;
-  animation: scrollText1 3s linear infinite;
+  animation: scrollText1 5s linear infinite;
   /* Initial animation duration */
 
 }
@@ -283,11 +284,12 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 19px 0 0;
+  padding: 0 10px 0 0;
   box-sizing: border-box;
   gap: 16px 0;
   min-width: 252px;
   max-width: 100%;
+  margin: 20px;
 }
 
 .multiple-awards {
@@ -315,6 +317,7 @@
   gap: 44px 0;
   min-width: 252px;
   max-width: 100%;
+  margin: 20px;
 }
 
 .atmos-equiped-studio {
@@ -339,6 +342,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 100%;
+  margin : 20px ;
 }
 
 .team-section2 {
@@ -629,6 +633,7 @@
   justify-content: flex-start;
   padding: var(--padding-7xl) 0 0;
   box-sizing: border-box;
+  text-align: left;
 }
 
 .connect-easily-through3 {
@@ -1685,6 +1690,7 @@
   padding: 0 0;
   gap: 30px 0;
   letter-spacing: normal;
+  overflow: hidden
 }
 
 @media screen and (max-width: 1225px) {
@@ -1747,7 +1753,9 @@
   .tom-pottigeryxzllnx-s-n-image {
     flex-wrap: wrap;
   }
-
+  .team-members {
+    flex:1;
+  }
   .ellipse-shape {
     flex: 1;
   }
@@ -1785,7 +1793,7 @@
   }
 
   .testimonials-area {
-    gap: 0 15px;
+    gap: 0 0px;
   }
 
   .what-people-are {
@@ -2831,3 +2839,165 @@ button:hover {
       background: rgb(204, 25, 25);
       color: white;
   }
+
+  /* Mobile View */
+
+  .frame-wrapper12 {
+    /* width: 100%; */
+    justify-content: left;
+    /* padding: var(--padding-19xl) var(--padding-169xl) var(--padding-21xl) 100px; */
+    box-sizing: border-box;
+    gap: var(--gap-xl);
+    transition: background-color 0.3s ease;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    width: 375px;
+  }
+  .ellipse-shape1 {
+    width:100%;
+    justify-content: center;
+    gap: 0 82px;
+    /* min-width: 585px; */
+    font-size: var(--font-size-lg);
+  }
+
+
+
+.ellipse-shape1,
+.frame-wrapper12,
+.sachin-puthran-and-ajinkya-nem-parent1 {
+  /* display: flex; */
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  padding: 2px;
+  margin: 2px;
+}
+
+
+.sachin-puthran-and-ajinkya-nem1 {
+  /* width: 246px; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-7xl) 0 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.services-studios-team-contact1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 29px 0 0;
+  box-sizing: border-box;
+  /* min-width: 240px;
+  max-width: 40%; */
+}
+.instagram-twitter-section1 {
+  /* height: 134px;
+  width: 134px; */
+  position: relative;
+  border-radius: 100%;
+  min-width: 134px;
+}
+.frame-parent2,
+.frame-wrapper12,
+.lorem-ipsum-is-simply-dummy-te-parent {
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.teamimg1 {
+  width: 250px; /* Set the desired width */
+  height: 250px; /* Set the desired height */
+  flex: 1;
+  /* display: flex; */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 50%; /* To make the image circular */
+}
+
+.connect-easily-through32 {
+  align-self: stretch;
+  position: relative;
+  line-height: 25px;
+  font-weight: 300;
+  text-align: center;
+}
+.puthran1,
+.sachin1 {
+  margin: 0;
+}
+.sachin-puthran1 {
+  align-self: stretch;
+  position: relative;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+/* Default styles for both PC and Mobile View */
+.pc-view {
+  display: block;
+}
+.mobile-view {
+  display: none;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  /* Hide PC View and show Mobile View */
+  .pc-view {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
+  }
+}
+
+
+
+/* 
+.swiper-mobile {
+  width: 100%;
+  height: 400px;
+  left: 10vw;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.swiper-wrapper-mobile {
+  flex: 1;
+  padding: 0 20.999999999999886px 0 0;
+  min-width: 251px;
+}
+
+
+.swiper-slide-mobile {
+  text-align: left;
+  display: flex;
+  justify-content: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  align-self: stretch;
+  border: 0.3px solid var(--color-white);
+  padding: var(--padding-2xl);
+  gap: 100px;
+  z-index: 1;
+  font-family: var(--font-space-grotesk);
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
