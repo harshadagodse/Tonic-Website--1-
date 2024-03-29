@@ -317,7 +317,7 @@
   flex-direction: row;
 }
 .rectangle-parent9 {
-  width: 1071px;
+  width: 100%;
   justify-content: space-between;
   gap: var(--gap-xl);
   /* width: 100%;
@@ -520,7 +520,8 @@
 .footer-text-parent {
   width: 100%;
   justify-content: center;
-  padding: var(--padding-19xl) var(--padding-169xl) var(--padding-21xl) 178px;
+  padding: 10px;
+  /* padding: var(--padding-19xl) var(--padding-169xl) var(--padding-21xl) 178px; */
   box-sizing: border-box;
   gap: var(--gap-xl);
   transition: background-color 0.3s ease;

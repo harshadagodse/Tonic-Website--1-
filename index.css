@@ -61,6 +61,7 @@
     font-family: var(--font-space-grotesk);
     color: #ffffff;
     transition: background-color 0.3s ease;
+    width: 300px;
   }
     .swiper-slide:hover {
     background-color: #3532d1;
@@ -86,8 +87,17 @@
     position: relative;
     background-color: var(--color-gainsboro-100);
   }
-  
   .rectangle-parent {
+    width: 250px;
+    height:200px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 0 15.4px;
+    font-size: var(--font-size-lg);
+  }
+  /* .rectangle-parent {
     width: 308.4px;
     height: 116.8px;
     display: flex;
@@ -96,7 +106,7 @@
     justify-content: flex-end;
     gap: 0 15.4px;
     font-size: var(--font-size-lg);
-  }
+  } */
 
   .swiper-slide img {
     display: block;
@@ -1294,20 +1304,11 @@
 }
 
 .ajinkya-neman-parent1 {
-  flex: 1;
+  /* flex: 1; */
   flex-direction: column;
 }
 
-.rectangle-parent {
-  width: 308.4px;
-  height: 116.8px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-end;
-  gap: 0 15.4px;
-  font-size: var(--font-size-lg);
-}
+
 
 .test-3-child {
   width: 364.8px;
@@ -1544,7 +1545,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  margin: 0 !important;
+  margin: 10px !important;
   top: 0;
   bottom: 0;
   left: -7px;
@@ -1553,7 +1554,8 @@
 
 .get-in-touch1 {
   align-self: stretch;
-  height: 86px;
+  height: 100%;
+  /* height: 86px; */
   position: relative;
   line-height: 100px;
   text-transform: uppercase;
@@ -1599,7 +1601,7 @@
 .service-studio-contact-info-parent {
   flex: 1;
   flex-direction: column;
-  gap: 65px 0;
+  gap: 16px 0;
 }
 
 .frame-wrapper2,
@@ -1615,14 +1617,14 @@
   width: 621px;
   flex-direction: row;
   padding: 0 var(--padding-7xs);
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-size: var(--font-size-base);
 }
 
 .get-in-touch-parent {
   width: 654px;
   flex-direction: column;
-  gap: 116px 0;
+  gap: 16px 0;
   min-width: 654px;
 }
 
@@ -1647,8 +1649,8 @@
 
 .instagram-parent {
   align-self: stretch;
-  flex-direction: row;
-  gap: 0 2px;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .social-media-icons {
@@ -2368,7 +2370,7 @@ hr {
   height: 200px;
   /* Adjust height as needed */
   /* Hide overflow */
-  padding-top: 100px;
+  padding-top: 10px;
   animation: marquee 10s linear infinite;
 
 }
@@ -2946,6 +2948,7 @@ button:hover {
 /* Default styles for both PC and Mobile View */
 .pc-view {
   display: block;
+  width:100%;
 }
 .mobile-view {
   display: none;
@@ -2964,40 +2967,45 @@ button:hover {
 
 
 
-/* 
-.swiper-mobile {
-  width: 100%;
-  height: 400px;
-  left: 10vw;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
+
+@media screen and (max-width: 450px) {
+  .get-in-touch1 {
+    font-size: 70px;
+    line-height: 60px;
+  }
+
+
+  .instagram, .twitter {
+    font-size: var(--font-size-xl);
+    line-height: 30px;
+  }
+
+  
+
+.instagram-parent {
+    flex-wrap: wrap;
+    gap: 1px;
+
 }
 
-.swiper-wrapper-mobile {
-  flex: 1;
-  padding: 0 20.999999999999886px 0 0;
-  min-width: 251px;
-}
-
-
-.swiper-slide-mobile {
-  text-align: left;
-  display: flex;
-  justify-content: stretch;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
+.what-people-are-saying {
+  gap: 39px 0;
+  padding-bottom: 10px;
   box-sizing: border-box;
-  align-self: stretch;
-  border: 0.3px solid var(--color-white);
-  padding: var(--padding-2xl);
-  gap: 100px;
-  z-index: 1;
-  font-family: var(--font-space-grotesk);
-  color: #ffffff;
-  transition: background-color 0.3s ease;
 }
 
+}
 
-
-
+@media screen and (max-width: 450px){
+.team-members {
+    font-size: 50px;
+    line-height: 1;
+    padding: 0px;
+    margin-top: -150px;
+    z-index: 10;
+  }
+  .swiper-slide {
+    max-width:80%;
+    margin-right: 40px;
+  }
+}
