@@ -28,7 +28,7 @@
     text-align: left;
     display: inline-block;
     white-space: nowrap;
-   
+
   }
   .swiper {
     width: 100%;
@@ -85,7 +85,7 @@
     position: relative;
     background-color: var(--color-gainsboro-100);
   }
-  
+
   .rectangle-parent {
     width: 308.4px;
     height: 116.8px;
@@ -510,10 +510,10 @@
   position: relative;
   align-items: center;
   color: #fff;
- 
+
   max-width: 100%;
-  overflow: hidden; 
-  
+  overflow: hidden;
+
 }*/
 .team-members {
   /* line-height: 0.5; */
@@ -931,10 +931,10 @@
   overflow: hidden;
 }
 
-/* .frame-parent 
+/* .frame-parent
 .what-people-are-saying {
   align-self: center;
-  
+
 } */
 
 
@@ -1546,6 +1546,24 @@
   background-color: var(--color-blueviolet);
 }
 
+.get-in-touch-scroller {
+  align-self: stretch;
+  height: 86px;
+  position: relative;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+  font-size: 200px;
+  color: var(--color-white);
+  font-family: var(--font-space-grotesk);
+  animation: scrollText1 3s linear infinite;
+  margin-top: -300px;
+  margin-bottom: 100px;
+}
+
 .get-in-touch1 {
   align-self: stretch;
   height: 86px;
@@ -1557,7 +1575,6 @@
   flex-shrink: 0;
   z-index: 1;
 }
-
 .contact1,
 .services1,
 .studios1,
@@ -1855,7 +1872,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     max-width: 100%;
-    
+
   } */
   .what-people-are-saying {
     gap: 39px 0;
@@ -2030,6 +2047,11 @@
   .get-in-touch1 {
     font-size: var(--font-size-11xl);
     line-height: 40px;
+  }
+
+  .get-in-touch-scroller {
+    font-size: var(--font-size-101xl);
+    margin-top: -300px;
   }
 
   .service-studio-contact-info {
@@ -2282,8 +2304,8 @@ hr {
   line-height: 1.2;
   padding: var(--padding-11xl) var(--padding-xl) var(--padding-7xl);
   margin-bottom: 20px;
- 
-  
+
+
 }
 
 .exceptional-talent-meets-best > .team-members1 > p {
@@ -2304,14 +2326,14 @@ hr {
   line-height: 1.2;
   padding: var(--padding-11xl) var(--padding-xl) var(--padding-7xl);
   margin-bottom: 20px;
-  /* font-size: 20px; 
+  /* font-size: 20px;
 
 
-  
+
 }
 
 .exceptional-talent-meets-best >.team-members2 > p {
- 
+
   background: linear-gradient(
     to right,
     rgb(255, 255, 255) 50%,
@@ -2346,11 +2368,11 @@ hr {
   /*   margin-bottom: -250px;
   margin-left: 50px;
   line-height: 1;
-  /*   outline: 6px dotted teal; 
+  /*   outline: 6px dotted teal;
   font-size: 100px;
-  /* margin-top: 60px; 
-  
-  
+  /* margin-top: 60px;
+
+
 } */
 .what-people-are-saying-text{
   white-space: nowrap;
@@ -2528,7 +2550,7 @@ button {
   margin-bottom: 16px;
   box-sizing: border-box;
   border-radius: 15px;
-  background-color: rgb(105, 152, 111);
+  background-color: var(--color-blueviolet);
   color: rgb(183, 213, 179);
   font-size: 17px;
   font-weight: 700;
@@ -2536,7 +2558,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(52, 98, 58);
+  background-color: var(--color-blueviolet);
 }
 
 .map-div iframe {
@@ -2810,11 +2832,11 @@ button:hover {
   to {
     transform: translateX(-100%);
   }
-  
+
 } */
 
 
-/* 
+/*
   p {
       font-size: clamp(2rem, 5vw, 8rem);
   } */
