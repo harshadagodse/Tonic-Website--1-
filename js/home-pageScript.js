@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;
   var animationDuration = 20 + scrollPosition * 0.01; // Decrease the animation duration as you scroll down
-  document.querySelector('.get-in-touch1').style.animationDuration = animationDuration + 's';
+  document.querySelector('.get-in-touch-scroller').style.animationDuration = animationDuration + 's';
 });
 
 // document.querySelector('.tonic-the-sound').addEventListener('mouseenter', function() {
@@ -99,7 +99,7 @@ splitTypes.forEach((char,i) => {
 
     const text = new SplitType(char, { types: 'chars'})
 
-    gsap.fromTo(text.chars, 
+    gsap.fromTo(text.chars,
         {
             color: bg,
         },

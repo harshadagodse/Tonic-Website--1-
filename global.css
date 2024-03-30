@@ -8,6 +8,7 @@ body {
   --font-space-grotesk: "Space Grotesk";
 
   /* font sizes */
+  --font-size-mini: 15px;
   --font-size-6xl: 25px;
   --font-size-xl: 20px;
   --font-size-sm: 14px;
@@ -56,6 +57,7 @@ body {
   --gap-6xl: 25px;
   --gap-31xl: 50px;
   --gap-9xl: 28px;
+  --gap-49xl-5: 68.5px;
 
   /* Paddings */
   --padding-179xl: 198px;
@@ -94,4 +96,8 @@ body {
   --padding-16xl: 35px;
   --padding-mini: 15px;
   --padding-11xs: 2px;
+
+  /* Border radiuses */
+  --br-16xl: 35px;
 }
+
