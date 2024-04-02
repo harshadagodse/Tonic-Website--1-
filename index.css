@@ -385,7 +385,7 @@
 }
 
 .testimonials-area {
-  width: 1132px;
+  width: 100%;
   flex-direction: row;
   gap: 0 62px;
 }
@@ -1617,7 +1617,7 @@ tonic_logo_black {
 
 .get-in-touch1 {
   align-self: stretch;
-  height: 86px;
+  height: 100%;
   position: relative;
   line-height: 100px;
   text-transform: uppercase;
@@ -1676,7 +1676,7 @@ tonic_logo_black {
 }
 
 .frame-wrapper2 {
-  width: 621px;
+  width:100%;
   flex-direction: row;
   padding: 0 var(--padding-7xs);
   /* box-sizing: border-box; */
@@ -1684,15 +1684,15 @@ tonic_logo_black {
 }
 
 .get-in-touch-parent {
-  width: 654px;
+  width: 100%;
   flex-direction: column;
-  gap: 16px 0;
+  gap: 80px 0;
   min-width: 654px;
 }
 
 .instagram,
 .twitter {
-  flex: 1;
+  /* flex: 1; */
   position: relative;
   line-height: 22px;
   text-transform: uppercase;
@@ -1706,12 +1706,12 @@ tonic_logo_black {
 .social-media-icons {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .instagram-parent {
   align-self: stretch;
-  flex-direction: column;
+  flex-direction: row;
   gap: 16px;
 }
 
@@ -2525,8 +2525,10 @@ button:hover {
 .rows {
   display: flex;
   position: relative;
-  height: 11.771vw;
+  /* height: 150px; */
   justify-content: space-between;
+  width: 100%;
+  /* opacity: 0.2; */
 }
 
 @media(max-width: 760px) {
@@ -2613,6 +2615,7 @@ button:hover {
   top: 0;
   left: 0;
   right: 0;
+  opacity: 0.2;
 }
 
 .ln_h.cdt_ln_b_h {
@@ -3257,7 +3260,7 @@ button:hover {
   }
 
   .get-in-touch-parent {
-    gap: 29px 0;
+    gap: 40px 0;
   }
 
   .instagram,
@@ -3284,6 +3287,7 @@ button:hover {
   .get-in-touch1 {
     font-size: 70px;
     line-height: 60px;
+    padding-top: 30px;
   }
 
   .instagram,
@@ -3295,6 +3299,7 @@ button:hover {
   .instagram-parent {
     flex-wrap: wrap;
     gap: 1px;
+    flex-direction: column;
   }
 
   .what-people-are-saying {
@@ -3561,4 +3566,29 @@ button:hover {
 
 
 
+}
+
+/* Line effect */
+
+.team-section {
+  position: relative; /* Ensure proper positioning for pseudo-element */
+  padding-left: 20px; /* Adjust the left padding as needed */
+  margin-left: 10px; /* Adjust margin to create space for the line */
+}
+
+.team-section:before {
+  content: "";
+  position: absolute;
+  left: -5px; /* Adjust the position to align the line with padding */
+  top: 0;
+  bottom: 0;
+  width: 3px; /* Adjust the width of the vertical line */
+  background-color: #000; /* Adjust the color of the vertical line */
+}
+.vertical-line {
+  height: 255px;
+  width: 1px;
+  position: relative;
+  border-right: 1px solid var(--color-white);
+  box-sizing: border-box;
 }
