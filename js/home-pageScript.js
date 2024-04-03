@@ -1,16 +1,5 @@
 
-window.addEventListener('scroll', function() {
-  var scrollPosition = window.scrollY;
-  var animationDuration = 20 + scrollPosition * 0.01; // Decrease the animation duration as you scroll down
-  document.querySelector('.tonic-the-sound').style.animationDuration = animationDuration + 's';
-});
 
-//conact page scroll text
-window.addEventListener('scroll', function() {
-  var scrollPosition = window.scrollY;
-  var animationDuration = 20 + scrollPosition * 0.01; // Decrease the animation duration as you scroll down
-  document.querySelector('.get-in-touch-scroller').style.animationDuration = animationDuration + 's';
-});
 
 // document.querySelector('.tonic-the-sound').addEventListener('mouseenter', function() {
 //   this.classList.add('hover-slow');
@@ -26,11 +15,7 @@ window.addEventListener('scroll', function() {
 //   document.querySelector('.scrolling-text').style.animationDuration = animationDuration + 's';
 // });
 
-window.addEventListener('scroll', function() {
-  var scrollPosition = window.scrollY;
-  var animationDuration = 5 + scrollPosition * 0.01; // Adjust the factor as needed
-  document.querySelector('.scrolling-text').style.animationDuration = animationDuration+ 's';
-});
+
 
 // document.querySelector('.scrolling-text').addEventListener('mouseenter', function() {
 //   this.classList.add('hover-slow');
@@ -119,14 +104,14 @@ splitTypes.forEach((char,i) => {
     })
 });
 
-//FOR MARQUEE
+//FOR MARQUEE tonic sound
 gsap.registerPlugin(ScrollTrigger);
 
 let tl = gsap.timeline();
 let marquee = document.querySelector(".marquee");
 let content = document.querySelector(".marquee__content");
 let items = document.querySelectorAll(".marquee__item");
-let tlLength = items.length * 2;
+let tlLength = items.length * 8;
 
 // animation timeline
 tl.to(".marquee__content", tlLength, {
@@ -180,6 +165,67 @@ ScrollTrigger.create({
   }
 });
 
+//FOR MARQUEE what peple are saying
+gsap.registerPlugin(ScrollTrigger);
+
+let t2 = gsap.timeline();
+let marquee1 = document.querySelector(".marquee1");
+let content1 = document.querySelector(".marquee__content1");
+let items1 = document.querySelectorAll(".marquee__item1");
+let tlLength1 = items.length * 8;
+
+// animation timeline
+t2.to(".marquee__content1", tlLength1, {
+  xPercent: -100,
+  repeat: -1,
+  ease: "none"
+});
+
+let currentScale1 = 1;
+let scaleTl2;
+
+// scroll trigger
+ScrollTrigger.create({
+  markers: false,
+  trigger: marquee1,
+  scrub: 1,
+  onUpdate: (self) => {
+    console.log(self.direction)
+    if (self.direction == 1) {
+      isUpdated = true;
+      let tScale = self.getVelocity() / 200;
+      if (tScale > currentScale) {
+        currentScale1 = tScale;
+        scaleTl2 && scaleTl2.kill();
+        scaleTl2 = gsap
+          .timeline({
+            deafults: {
+              ease: "power2.out"
+            },
+            onComplete: () => {
+              currentScale1 = 1;
+              scaleTl2.kill();
+            }
+          })
+          .to(t2, {
+            duration: 0.1,
+            timeScale: tScale,
+              ease: "power2.out"
+          })
+          .to(
+            t2,
+            {
+              timeScale: 1,
+              duration: 0.5,
+              ease: "none"
+            },
+            "+=0.3"
+          );
+      }
+    }
+  }
+});
+
 
 //Menu
 var navigation = new TimelineLite({paused:true, reversed:true});
@@ -197,4 +243,39 @@ $(".navbar, .close").click (function() {
   } else {
     $('navigationWrap').addClass('menu-open');
   }
+});
+
+// Lines
+
+console.clear(); // Start with a clean console on refesh
+
+const leftLines = document.querySelectorAll(".border-line-btm");
+
+leftLines.forEach((leftLine) => {
+  if(leftLine.classList.contains('right')){
+    console.warn('right');
+    gsap.set(leftLine,{xPercent:-100})
+    
+  } else{
+    gsap.set(leftLine,{xPercent:100})
+    
+  }
+
+  
+  const leftAnimationSettings = {
+    duration: 2,
+    xPercent: 0,
+    ease: "power3.out",
+    transformOrigin: "left"
+  };
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: leftLine,
+      start: "top top+=200px",
+      markers: true
+    }
+  });
+
+  tl.to(leftLine, leftAnimationSettings);
 });
