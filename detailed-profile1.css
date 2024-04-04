@@ -1,5 +1,5 @@
 .tom-pottiger-yxzl9lnxsna-unspl-icon4 {
-  height: auto;
+  height: 100%;
   width: 100%;
   position: absolute;
   margin: 0 !important;
@@ -327,7 +327,7 @@
 }
 .rectangle-parent9 {
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   gap: var(--gap-xl);
   /* width: 100%;
   justify-content: space-between;
@@ -529,7 +529,7 @@
 .footer-text-parent {
   width: 100%;
   justify-content: center;
-  padding: 20px;
+  /* padding: 20px; */
   /* padding: 10px; */
   /* padding: var(--padding-19xl) var(--padding-169xl) var(--padding-21xl) 178px; */
   box-sizing: border-box;

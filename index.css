@@ -1,6 +1,6 @@
 
 .vertical-line {
-  height: 255px;
+  height:100%;
   width: 1px;
   position: relative;
   border-right: 1px solid var(--color-gray-100);
@@ -18,7 +18,14 @@
   box-sizing: border-box;
   display: none;
 }
-
+.horizontal-line-pc {
+  height: 255px;
+  width: 100%;
+  position: relative;
+  border-right: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+  display: block;
+}
 .navbar {
   display: none;
 }
@@ -393,7 +400,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 10px 0 0;
+  padding: 30px;
   box-sizing: border-box;
   gap: 16px 0;
   min-width: 252px;
@@ -474,7 +481,7 @@
 }
 
 .recordings-studios {
-  width: 1398px;
+  width: 100%;
   align-self: center;
   display: flex;
   flex-direction: row;
@@ -1835,17 +1842,6 @@ tonic_logo_black {
   overflow: hidden
 }
 
-.homepage-mobile {
-  width: 100%;
-  background-color: var(--color-black);
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 0;
-  gap: 30px 0;
-  letter-spacing: normal;
-  overflow: hidden
-}
 
 @media screen and (max-width: 1225px) {
   .banner-container {
@@ -2709,6 +2705,7 @@ button:hover {
   /* opacity: 0.2; */
 }
 
+
 .ln_h.cdt_ln_b_h {
   bottom: 0;
   left: 0;
@@ -2752,12 +2749,23 @@ button:hover {
 
 
 
+/* .ln_v,
+.ln_h {
+  border: 1px #ccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* margin-top: 20px;
+  margin-bottom: 27px; 
+} */
+
 .ln_v,
 .ln_h {
   border: 1px #ccc;
-  margin-top: 1px;
-  margin-bottom: 25px;
-}
+  /* margin-top: 1px; */
+  margin-bottom: 10px;
+  /* margin-top: 20px;
+  margin-bottom: 27px; */
+} 
 
 
 
@@ -3444,7 +3452,7 @@ button:hover {
     font-size: 50px;
     line-height: 1;
     padding: 0px;
-    margin-top: -150px;
+    /* margin-top: -150px; */
     z-index: 10;
   }
 
@@ -3738,33 +3746,7 @@ button:hover {
     display: block; */
   }
 
-  /* .homepage {
-    width: 100%;
-    background-color: var(--color-black);
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 0;
-    gap: 30px 0;
-    letter-spacing: normal;
-    overflow: hidden;
-    display: none;
-  
-  } */
-  
-  /* .homepage-mobile {
-    width: 100%;
-    background-color: var(--color-black);
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 0;
-    gap: 30px 0;
-    letter-spacing: normal;
-    overflow: hidden;
-    display: block;
-  
-  } */
+
  
   .ln_h {
     position: absolute;
@@ -3827,7 +3809,7 @@ button:hover {
   box-sizing: border-box;
 } */
 .bg-black {
-  background: #0f0f0f;
+  background: #d11818;
   height: 2px;
   width: 100%;
 /*     transition: 1.3s ease-in-out; */
