@@ -133,6 +133,7 @@
   width: 100%;
   height: 400px;
   left: 10vw;
+  padding-top: 100px;
   padding-bottom: 50px;
   margin-bottom: 50px;
 }
@@ -458,7 +459,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 100%;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .team-section2 {
@@ -487,7 +488,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0 var(--padding-xl) var(--padding-40xl);
+  /* padding: 0 var(--padding-xl) var(--padding-40xl); */
   box-sizing: border-box;
   max-width: 100%;
   text-align: left;
@@ -665,7 +666,8 @@
 
 .rectangle-background {
   align-self: stretch;
-  padding: 0 var(--padding-xl);
+  padding-top: 150px;
+  /* padding: 0 var(--padding-xl); */
   box-sizing: border-box;
   text-align: left;
   font-size: var(--font-size-81xl);
@@ -1085,9 +1087,10 @@
 }
 
 .what-people-are-saying {
+  padding-top: 50px;
   /* padding: 0 0 304.5px; */
   box-sizing: border-box;
-  /* gap: 79px 0; */
+  gap: 79px 0;
   text-align: center;
   font-size: var(--font-size-81xl);
   color: var(--color-white);
@@ -1651,7 +1654,7 @@ tonic_logo_black {
   z-index: 99;
 }
 
-.footer-rectangle {
+/* .footer-rectangle {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -1660,9 +1663,10 @@ tonic_logo_black {
   bottom: 0;
   left: -7px;
   background-color: var(--color-blueviolet);
-}
+} */
 
 .get-in-touch-scroller {
+
   align-self: stretch;
   height: 100%;
   /* height: 86px; */
@@ -1734,6 +1738,14 @@ tonic_logo_black {
   gap: var(--gap-xl);
 }
 
+.tonic-the-music-parent{
+  display: flex;
+  align-self: stretch;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.tonic-the-music-footer,
 .tonic-the-music {
   align-self: stretch;
   position: relative;
@@ -1742,6 +1754,7 @@ tonic_logo_black {
   line-height: 25px;
   text-transform: uppercase;
   z-index: 1;
+  /* flex-direction: row; */
 }
 
 .service-studio-contact-info-parent {
@@ -1821,13 +1834,14 @@ tonic_logo_black {
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  padding: var(--padding-43xl) var(--padding-6xs) var(--padding-18xl) 108px;
+  padding: 40px;
   max-width: 100%;
   gap: var(--gap-xl);
   text-align: left;
   font-size: var(--font-size-81xl);
   color: var(--color-white);
   font-family: var(--font-space-grotesk);
+  background-color: #3532D1;
 }
 
 .homepage {
@@ -2696,6 +2710,7 @@ button:hover {
   width: 100%;
   height: 1px;
   display: block;
+  /* margin-top: 20px;margin-bottom: 20px; */
 }
 
 .ln_h.cdt_ln_t_h {
@@ -2762,7 +2777,7 @@ button:hover {
 .ln_h {
   border: 1px #ccc;
   /* margin-top: 1px; */
-  margin-bottom: 10px;
+  /* margin-bottom: 20px; */
   /* margin-top: 20px;
   margin-bottom: 27px; */
 } 
@@ -3779,6 +3794,21 @@ button:hover {
   margin: 40px;
 }
 
+.tonic-the-music {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.tonic-the-music-parent{
+  flex-wrap: wrap;
+  gap: 1px;
+  flex-direction: column;
+}
 
 }
 
