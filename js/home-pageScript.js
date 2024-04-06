@@ -279,3 +279,141 @@ leftLines.forEach((leftLine) => {
 
   tl.to(leftLine, leftAnimationSettings);
 });
+
+
+// Line
+TweenLite.defaultEase = Linear.easeNone;
+
+
+//show the square only once js has run
+//visibility set to hidden in css panel
+TweenLite.set(".square", {visibility:"visible"});
+
+
+
+var t4 = new TimelineLite();
+t4.fromTo(".l1", 1, {height:0}, {height:200})
+.fromTo(".l2", 4, {width:0, backgroundColor:"red"}, {width:200, backgroundColor:"blue"})
+  .fromTo(".l3", 1, {height:0}, {height:200})
+  .fromTo(".l4", 1, {width:0}, {width:200})
+
+t4.timeScale(4) //play faster
+
+// TweenLite.defaultEase = Linear.easeNone;
+
+
+// //show the square only once js has run
+// //visibility set to hidden in css panel
+// TweenLite.set(".square", {visibility:"visible"});
+
+
+
+// var t3 = new TimelineLite();
+// t3.fromTo(".l1", 1, {height:0}, {height:200})
+// .fromTo(".l2", 4, {width:0, backgroundColor:"red"}, {width:200, backgroundColor:"blue"})
+//   .fromTo(".l3", 1, {height:0}, {height:200})
+//   .fromTo(".l4", 1, {width:0}, {width:2000})
+
+// t3.timeScale(1) //play faster
+
+
+// gsap.utils.toArray(".line").forEach(line => {
+//   gsap.from(line, {
+//     scaleX: 0,
+//     duration: 2,
+//     transformOrigin: "center center",
+//     ease: "power2.inOut",
+//     scrollTrigger: {
+//       trigger: line,
+//       start: "top 80%",
+   
+//       toggleActions: "play none none reverse",
+//         // markers:true
+//     }
+//   });
+// });
+// Create a timeline
+const timeline1 = gsap.timeline();
+
+// Iterate over each ".line" element
+gsap.utils.toArray(".line").forEach(line => {
+  // Add animations to the timeline
+  timeline1.from(line, {
+    scaleX: 0,
+    duration: 2,
+    transformOrigin: "center center",
+    ease: "power2.inOut",
+    scrollTrigger: {
+      trigger: line,
+      start: "top 80%",
+      toggleActions: "play none none reverse"
+    }
+  })
+  // Add another animation to the same timeline
+  .to(line, {
+    opacity: 2,
+    duration: 1,
+    delay: 1 // Add a delay after the previous animation
+  });
+});
+
+
+gsap.utils.toArray(".line1").forEach(line1 => {
+  gsap.from(line1, {
+    scaleX: 0,
+    duration: 2,
+    transformOrigin: "left center",
+    ease: "power2.inOut",
+    scrollTrigger: {
+      trigger: line1,
+      start: "top 90%",
+      // end: "bottom bottom",
+   
+      toggleActions: "play none none reverse",
+        markers:true
+    }
+  });
+});
+
+// gsap.utils.toArray(".verticalline").forEach(verticalline => {
+//   gsap.from(verticalline, {
+//     scaleX: 0,
+//     duration: 2,
+//     transformOrigin: "top center",
+//     ease: "power2.inOut",
+//     scrollTrigger: {
+//       trigger: verticalline,
+//       start: "top 90%",
+//       // end: "bottom bottom",
+   
+//       toggleActions: "play none none reverse",
+//         markers:true
+//     }
+//   });
+// });
+
+// Create a timeline
+const timeline = gsap.timeline();
+
+// Iterate over each ".verticalline" element
+gsap.utils.toArray(".verticalline").forEach(verticalline => {
+  // Add animations to the timeline
+  timeline.from(verticalline, {
+    scaleX: 0,
+    duration: 2,
+    transformOrigin: "center center",
+    ease: "power2.inOut",
+    scrollTrigger: {
+      trigger: verticalline,
+      start: "top 90%",
+      toggleActions: "play none none reverse",
+      markers: true
+    }
+  })
+  // Add another animation to the same timeline
+  .to(verticalline, {
+    opacity: 1,
+    duration: 1,
+    delay: 0 // Add a delay after the previous animation
+  });
+});
