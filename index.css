@@ -416,11 +416,11 @@
   min-width: 252px;
   max-width: 100%;
   margin: 20px;
-  animation: fadeIn 1s;
-  -webkit-animation: fadeIn 1s;
-  -moz-animation: fadeIn 1s;
-  -o-animation: fadeIn 1s;
-  -ms-animation: fadeIn 1s;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
   
 }
 
@@ -2671,13 +2671,7 @@ button:hover {
   /* opacity: 0.2; */
 }
 
-@media(max-width: 760px) {
-  .rows {
-    height: auto;
-    flex-wrap: wrap;
-    padding: 53px 0 65px;
-  }
-}
+
 
 .cols {
   width: 50%;
@@ -3268,6 +3262,8 @@ button:hover {
 
   .what-people-are-saying {
     gap: 20px 0;
+    
+      padding-top: 10px;
   }
 
   .lorem-ipsum-is-simply,
@@ -4709,7 +4705,9 @@ button:hover {
   align-self: center;
   width:100%
 }
-
+.rectangle-background {
+padding: 0 var(--padding-xl);
+}
 }
 
 /* Line effect */
