@@ -233,15 +233,19 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-.frame-child14 {
+.project-img {
   border: 1px;
-  background-color: var(--color-darkslategray);
+  /* background-color: var(--color-darkslategray); */
   height: 200px;
   width: 300px;
   outline: 0;
   position: relative;
   margin: 30px;
   padding: 1px;
+  .img{
+    width: 300px;
+    height: 200px;
+  }
 }
 .project-011 {
   width: 150px;
@@ -1106,7 +1110,7 @@
     line-height: 22px;
   }
   .project-rectangle {
-    gap: 20px 0;
+    gap: 1px;
   }
   .get-in-touch5 {
     font-size: var(--font-size-11xl);
@@ -1136,6 +1140,28 @@
   .detailed-profile1 {
     gap: 42px 0;
   }
+  .rectangle-parent9 {
+    width: 100%;
+  }
+  .footer-text-parent {
+    width: 100%;
+  }
+  .project-img {
+    width: 100%;
+    margin: 0px;
+  }
+  .project-01-parent{
+    width: 100%;
+  }
+  .connect-easily-through20 {
+    width: 100%;
+  }
+  .connect-easily-through22{
+    width: 100%;
+  }
+  .connect-easily-through22{
+    width: 100%;
+  }
 }
 /* .footer-text {
   
@@ -1147,7 +1173,7 @@
   padding: 10px;
   margin-bottom: 10px;
 }
-.frame-child14 {
+.project-img {
   width: 100%;
 }
 .frame-wrapper15 {
@@ -1219,7 +1245,7 @@
 }
 
 .rows {
-	display: flex;
+	display: block;
 	position: relative;
 	height:100%;
   width: 100%;
@@ -1366,7 +1392,7 @@
 
 
 
-.frame-child14.expanded {
+.project-img.expanded {
   /* Define the expanded size */
   width: 100%; /* Adjust this according to your requirements */
   height: auto; /* Adjust this according to your requirements */
@@ -1382,4 +1408,14 @@
 
 .project-content.active {
   opacity: 1;
+}
+
+
+
+.line1 {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  /* margin: 50px 0; */
+  z-index: 1;
 }
