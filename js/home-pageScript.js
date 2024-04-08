@@ -317,28 +317,8 @@ t4.timeScale(4) //play faster
 // t3.timeScale(1) //play faster
 
 
-// gsap.utils.toArray(".line").forEach(line => {
-//   gsap.from(line, {
-//     scaleX: 0,
-//     duration: 2,
-//     transformOrigin: "center center",
-//     ease: "power2.inOut",
-//     scrollTrigger: {
-//       trigger: line,
-//       start: "top 80%",
-   
-//       toggleActions: "play none none reverse",
-//         // markers:true
-//     }
-//   });
-// });
-// Create a timeline
-const timeline2 = gsap.timeline();
-
-// Iterate over each ".line" element
 gsap.utils.toArray(".line").forEach(line => {
-  // Add animations to the timeline
-  timeline2.from(line, {
+  gsap.from(line, {
     scaleX: 0,
     duration: 2,
     transformOrigin: "center center",
@@ -346,77 +326,63 @@ gsap.utils.toArray(".line").forEach(line => {
     scrollTrigger: {
       trigger: line,
       start: "top 80%",
-      toggleActions: "play none none reverse"
-    }
-  })
-  // Add another animation to the same timeline
-  .to(line, {
-    opacity: 2,
-    duration: 1,
-    delay: 1 // Add a delay after the previous animation
-  });
-});
-
-
-gsap.utils.toArray(".line1").forEach(line1 => {
-  gsap.from(line1, {
-    scaleX: 0,
-    duration: 2,
-    transformOrigin: "center center",
-    ease: "power2.inOut",
-    scrollTrigger: {
-      trigger: line1,
-      start: "top 90%",
-      // end: "bottom bottom",
    
       toggleActions: "play none none reverse",
-        markers:true
+        // markers:true
     }
   });
 });
-
-// gsap.utils.toArray(".verticalline").forEach(verticalline => {
-//   gsap.from(verticalline, {
-//     scaleX: 0,
-//     duration: 2,
-//     transformOrigin: "top center",
-//     ease: "power2.inOut",
-//     scrollTrigger: {
-//       trigger: verticalline,
-//       start: "top 90%",
-//       // end: "bottom bottom",
-   
-//       toggleActions: "play none none reverse",
-//         markers:true
-//     }
-//   });
-// });
-
 // Create a timeline
-// const timeline = gsap.timeline();
+// const timeline2 = gsap.timeline();
 
-// // Iterate over each ".verticalline" element
-// gsap.utils.toArray(".verticalline").forEach(verticalline => {
+// // Iterate over each ".line" element
+// gsap.utils.toArray(".line").forEach(line => {
 //   // Add animations to the timeline
-//   timeline.from(verticalline, {
+//   timeline2.from(line, {
 //     scaleX: 0,
 //     duration: 2,
-//     transformOrigin: "top center",
+//     transformOrigin: "center center",
 //     ease: "power2.inOut",
 //     scrollTrigger: {
-//       trigger: verticalline,
-//       start: "top 90%",
-//       toggleActions: "play none none reverse",
-//       markers: true
+//       trigger: line,
+//       start: "top 80%",
+//       toggleActions: "play none none reverse"
 //     }
 //   })
 //   // Add another animation to the same timeline
-//   .to(verticalline, {
+//   .to(line, {
 //     opacity: 2,
 //     duration: 1,
 //     delay: 1 // Add a delay after the previous animation
 //   });
 // });
+// const timeline3 = gsap.timeline();
+
+// // Iterate over each ".line" element
+// gsap.utils.toArray(".line2").forEach(line2 => {
+//   // Add animations to the timeline
+//   timeline3.from(line2, {
+//     scaleX: 0,
+//     duration: 2,
+//     transformOrigin: "center center",
+//     ease: "power2.inOut",
+//     scrollTrigger: {
+//       trigger: line2,
+//       start: "top 80%",
+//       toggleActions: "play none none reverse"
+//     }
+//   })
+//   // Add another animation to the same timeline
+//   .to(line2, {
+//     opacity: 2,
+//     duration: 2,
+//     delay: 1// Add a delay after the previous animation
+//   });
+// });
+
+
+
+
 
 const timeline = gsap.timeline();
 
@@ -432,13 +398,13 @@ gsap.utils.toArray(".verticalline").forEach(verticalline => {
       trigger: verticalline,
       start: "top 90%",
       toggleActions: "play none none reverse",
-      markers: true
+      // markers: true
     }
   })
   // Add another animation to the same timeline
   .to(verticalline, {
     opacity: 1, // Change opacity to 1
-    duration: 1,
+    duration: 2,
     delay: 1 // Add a delay after the previous animation
   });
 });
@@ -457,13 +423,31 @@ gsap.utils.toArray(".verticalline1").forEach(verticalline1 => {
       trigger: verticalline1,
       start: "top 90%",
       toggleActions: "play none none reverse",
-      markers: true
+      // markers: true
     }
   })
   // Add another animation to the same timeline
   .to(verticalline1, {
     opacity: 1, // Change opacity to 1
-    duration: 1,
+    duration: 2,
     delay: 1 // Add a delay after the previous animation
+  });
+});
+
+
+gsap.utils.toArray(".line1").forEach(line1 => {
+  gsap.from(line1, {
+    scaleX: 0,
+    duration: 2,
+    transformOrigin: "center center",
+    ease: "power2.inOut",
+    scrollTrigger: {
+      trigger: line1,
+      start: "top 90%",
+      // end: "bottom bottom",
+   
+      toggleActions: "play none none reverse",
+        // markers:true
+    }
   });
 });

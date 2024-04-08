@@ -1415,7 +1415,8 @@
 .line1 {
   height: 1px;
   width: 100%;
-  background-color: white;
+  /* background-color: white; */
+  border-bottom: 1px solid white;
   /* margin: 50px 0; */
   z-index: 1;
 }
