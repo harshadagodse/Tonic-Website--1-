@@ -55,6 +55,17 @@
     color: var(--color-white);
     font-family: var(--font-space-grotesk);
   }
+
+ .contact-info
+ {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-space-grotesk);
+ }
+
   .contact-inner,
   .contact-instance,
   .rectangle-parent14 {

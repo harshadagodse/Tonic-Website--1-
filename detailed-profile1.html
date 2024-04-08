@@ -15,7 +15,7 @@
   <div class="detailed-profile1" id="smooth-content">
     <section class="tom-pottiger-yxzl9lnxsna-unspl-group">
       <img class="tom-pottiger-yxzl9lnxsna-unspl-icon4" alt=""
-        src="./public/Profile banner 1920x900px/Lucky Dhami 1920x900px.jpg" />
+        src="./public/Profile banner 1920x900px/Lucky Dhami 1920x900px.png" />
 
       <div class="frame-with-text1">
         <div class="frame-with-text-child"></div>
@@ -27,9 +27,9 @@
           <nav class="project-name">
             <nav class="connect-frames1">
               <div class="services8"><!--Services--></div>
-              <div class="studios8" id="studiosText1">Studios</div>
+              <div class="studios8" id="studiosText1"><a href="studio.html">Studios</a></div>
               <div class="team9" id="teamText1">Team</div>
-              <div class="contact8" id="contactText1">contact</div>
+              <div class="contact8" id="contactText1"><a href="contact.html">Contact</a></div>
             </nav>
           </nav>
         </header>
@@ -101,15 +101,15 @@
           </div>
         </div>
       </div>
-      
+
 
       <!-- <div id="footerContent1" class="footer-text-parent" onclick="toggleContent('project01')">
           <div class="footer-text">
               <div class="rectangle-parent9">
-                
+
                 <iframe class="project-img"  id="image1" src="https://www.youtube.com/embed/qcSz4ef9UHA?si=D64v2jaYS5zMpWOl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-               
-             
+
+
                   <div class="frame-wrapper15">
                       <div class="project-01-parent" id="project01">
                           <b class="project-011">Project 01</b>
@@ -142,7 +142,7 @@
               <div class="rectangle-parent9">
                 <img id="image2" class="project-img" loading="lazy" alt="" src="./public/banner-1@2x.png">
                 <iframe class="project-img"  id="image1" src="https://www.youtube.com/embed/qcSz4ef9UHA?si=D64v2jaYS5zMpWOl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-               
+
                   <div class="frame-wrapper15">
                       <div class="project-01-parent" id="project02">
                           <b class="project-021">Project 02</b>
@@ -205,7 +205,7 @@
             </div>
           </div>
         </div>
-      
+
 
       <div class="rows">
         <div class="line1"></div>
@@ -246,7 +246,7 @@
             </div>
           </div>
         </div>
-      
+
 
 
       <!-- <div id="footerContent3" class="footer-text-parent" onclick="toggleContent('project03')">
@@ -309,7 +309,7 @@
             </div>
           </div>
         </div>
-      
+
       <!-- <div class="line-vector">
   <img class="line-vector-child" loading="lazy" alt="" src="./public/vector-7.svg" />
 
@@ -327,7 +327,7 @@
             </div>
             <div class="additional-info" id="additionalInfo">
               Additional information you want to display.
-          </div> 
+          </div>
         </div>
     </div>
   </div> -->
@@ -370,7 +370,7 @@
             </div>
           </div>
         </div>
-      
+
 
       <div class="rows">
         <div class="line1"></div>
@@ -411,7 +411,7 @@
             </div>
           </div>
         </div>
-      
+
       <div class="rows">
         <div class="line1"></div>
       </div>
@@ -451,7 +451,7 @@
             </div>
           </div>
         </div>
-      
+
       <div class="rows">
         <div class="line1"></div>
         <!-- <div class="cdt_ln_t_h ln_h"><span style="transform: translate(0px, 0px);"></span></div>
@@ -479,7 +479,7 @@
               </div>
             </div>
           </div>
-        </div> 
+        </div>
 
 
 
@@ -601,20 +601,20 @@
           <div class="services-contacts">
             <div class="contact-info-frame">
               <!-- <div class="services9">Services</div> -->
-              <div class="studios9">Studios</div>
+              <div class="studios9"><a href="studio.html">Studios</a></div>
               <div class="team10">Team</div>
-              <div class="contact9">contact</div>
+              <div class="contact9"><a href="contact.html">Contact</a></div>
             </div>
             <div class="footer-frame3">
               <h3 class="instagram4">Instagram</h3>
               <h3 class="twitter4">Twitter</h3>
             </div>
             <div class="tonic-the-music4">
-              ©2024 tonic the music studio | ALL RIGHTS RESERVED 
+              ©2024 tonic the music studio | ALL RIGHTS RESERVED
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   </section>
@@ -751,13 +751,13 @@
   function toggleContent() {
     var image = document.getElementById('image2');
     var videoContainer = document.getElementById('videoContainer');
-    
+
     if (image.style.display !== 'none') {
       // If image is visible, hide it and show video
       image.style.display = 'none';
       videoContainer.innerHTML = ''; // Clear video container
       videoContainer.style.display = 'block';
-      
+
       // Create the iframe for the video
       var videoFrame = document.createElement('iframe');
       videoFrame.setAttribute('class', 'project-img');
@@ -826,7 +826,7 @@
             videoFrame.style.height = '400px'; // Increase video height
             image = document.getElementById('image' + projectId.slice(-1));
             if (image) {
-              
+
                 image.style.display = 'none';
             }
             console.log("4");
@@ -849,7 +849,7 @@
                 videoFrame.style.display = 'none';
                 // prevvideoId.style.display = 'none';
             }
-           
+
             console.log("7");
             // Reset the video frame size to its default
             videoFrame.style.width = '300px';
@@ -995,9 +995,8 @@
       trigger: line1,
       start: "top 90%",
       // end: "bottom bottom",
-   
       toggleActions: "play none none reverse",
-        markers:true
+        markers:false
     }
   });
 });

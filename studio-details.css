@@ -14,7 +14,7 @@ svg {
 
   .mask {
     width: 0;
-    color: #3532d1;
+    color: var(--color-blueviolet);
   }
 }
 

@@ -17,7 +17,7 @@
   /* display: none; */
 }
 /* .vertical-line{
-  
+
 } */
 .horizontal-line {
   height: 255px;
@@ -76,17 +76,17 @@
   line-height: 200px;
   font-weight: 500;
   font-family: var(--font-space-grotesk);
-  color: #3532d1;
+  color: var(--color-blueviolet);
   text-align: left;
   display: inline-block;
   white-space: nowrap;
 }
 
 .marquee__item__mob{
- 
+
   display: none;
- 
-} 
+
+}
 
 
 
@@ -135,8 +135,8 @@
 
  .marquee__item__mob1{
   display: none;
- 
-}  
+
+}
 
 .swiper {
   width: 100%;
@@ -174,7 +174,7 @@
 }
 
 .swiper-slide:hover {
-  background-color: #3532d1;
+  background-color: var(--color-blueviolet);
   transition: background-color 0.3s ease;
   /* Change background color to blue on hover */
 }
@@ -325,7 +325,7 @@
   line-height: 170px;
   font-weight: 500;
   font-family: var(--font-space-grotesk);
-  color: #3532d1;
+  color: var(--color-blueviolet);
   text-align: left;
   display: inline-block;
   white-space: nowrap;
@@ -421,7 +421,7 @@
   -moz-animation: fadeIn 3s;
   -o-animation: fadeIn 3s;
   -ms-animation: fadeIn 3s;
-  
+
 }
 
 @keyframes fadeIn {
@@ -583,7 +583,7 @@
   display: inline-block;
   /* white-space: rap; */
   overflow: hidden;
-  color: #3532d1;
+  color: var(--color-blueviolet);
 
 }
 
@@ -855,7 +855,7 @@
 }
 
 .frame-wrapper:hover {
-  background-color: #3532d1;
+  background-color: var(--color-blueviolet);
   /* Change the background color on hover */
 }
 
@@ -948,7 +948,7 @@
 }
 
 .get-in-touch:hover {
-  background-color: #3532d1;
+  background-color: var(--color-blueviolet);
   /* Change the background color on hover */
 }
 
@@ -1082,7 +1082,7 @@
 
 .frame-container:hover,
 .frame-container.scrolled {
-  background-color: #3532d1;
+  background-color: var(--color-blueviolet);
   /* Change the background color on hover or scroll */
 }
 
@@ -1176,7 +1176,7 @@
 }
 
 .rectangle-div:hover {
-  background-color: #3532d1;
+  background-color: var(--color-blueviolet);
   /* Change background color to blue on hover */
 }
 
@@ -1283,7 +1283,7 @@
 }
 
 .test-01:hover {
-  background-color: #3532d1;
+  background-color: var(--color-blueviolet);
   /* Change background color to blue on hover */
 }
 
@@ -1399,7 +1399,7 @@
 }
 
 .test-2:hover {
-  background-color: #3532d1;
+  background-color: var(--color-blueviolet);
   /* Change background color to blue on hover */
 }
 
@@ -1489,7 +1489,7 @@
 }
 
 .test-3:hover {
-  background-color: #3532d1;
+  background-color: var(--color-blueviolet);
   /* Change background color to blue on hover */
 }
 
@@ -1881,7 +1881,7 @@ tonic_logo_black {
   font-size: var(--font-size-81xl);
   color: var(--color-white);
   font-family: var(--font-space-grotesk);
-  background-color: #3532D1;
+  background-color: var(--color-blueviolet);
 }
 
 .homepage {
@@ -2313,7 +2313,7 @@ hr {
   width: 50%;
   opacity: 1;
   white-space: nowrap;
-  color: #3532d1;
+  color: var(--color-blueviolet);
 }
 
 /* .exceptional-talent-meets-best >.team-members > p {
@@ -2605,13 +2605,13 @@ button:hover {
 .map-div {
   height: 500px;
   width: 100%;
-  background-color: rgb(5, 5, 5);
+  background-color: var(--color-black);
 }
 
 .contact-info,
 .social-media {
   margin-bottom: 30px;
-  background-color: rgb(5, 5, 5);
+  background-color: var(--color-black);
   width: 100%;
   color: white;
 }
@@ -2804,7 +2804,7 @@ button:hover {
   margin-top: 20px;
   margin-bottom: 20px;
   /* margin-top: 20px;
-  margin-bottom: 27px; 
+  margin-bottom: 27px;
 } */
 
 .ln_v,
@@ -2814,7 +2814,7 @@ button:hover {
   /* margin-bottom: 20px; */
   /* margin-top: 20px;
   margin-bottom: 27px; */
-} 
+}
 
 
 
@@ -2860,7 +2860,7 @@ button:hover {
   line-height: 170px;
   font-weight: 500;
   font-family: var(--font-space-grotesk);
-  color: #3532d1;
+  color: var(--color-blueviolet);
   text-align: left;
   display: inline-block;
   white-space: nowrap;
@@ -3087,7 +3087,7 @@ button:hover {
     line-height: 100px;
     font-weight: 500;
     font-family: var(--font-space-grotesk);
-    color: #3532d1;
+    color: var(--color-blueviolet);
     text-align: left;
     display: inline-block;
     white-space: nowrap;
@@ -3105,7 +3105,7 @@ button:hover {
     line-height: 100px;
     font-weight: 500;
     font-family: var(--font-space-grotesk);
-    color: #3532d1;
+    color: var(--color-blueviolet);
     text-align: left;
     display: inline-block;
     white-space: nowrap;
@@ -3138,7 +3138,7 @@ button:hover {
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    background: #3532D1;
+    background: var(--color-blueviolet);
     opacity: 0;
     position: absolute;
     top: 0;
@@ -3262,7 +3262,7 @@ button:hover {
 
   .what-people-are-saying {
     gap: 20px 0;
-    
+
       padding-top: 10px;
   }
 
@@ -3549,7 +3549,7 @@ button:hover {
     line-height: 100px;
     font-weight: 500;
     font-family: var(--font-space-grotesk);
-    color: #3532d1;
+    color: var(--color-blueviolet);
     text-align: left;
     display: inline-block;
     white-space: nowrap;
@@ -3807,7 +3807,7 @@ button:hover {
   }
 
 
- 
+
   .ln_h {
     position: absolute;
     margin: auto;
@@ -3927,7 +3927,7 @@ button:hover {
     line-height: 100px;
     font-weight: 500;
     font-family: var(--font-space-grotesk);
-    color: #3532d1;
+    color: var(--color-blueviolet);
     text-align: left;
     display: inline-block;
     white-space: nowrap;
@@ -3945,7 +3945,7 @@ button:hover {
     line-height: 100px;
     font-weight: 500;
     font-family: var(--font-space-grotesk);
-    color: #3532d1;
+    color: var(--color-blueviolet);
     text-align: left;
     display: inline-block;
     white-space: nowrap;
@@ -3978,7 +3978,7 @@ button:hover {
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    background: #3532D1;
+    background: var(--color-blueviolet);
     opacity: 0;
     position: absolute;
     top: 0;
@@ -4387,7 +4387,7 @@ button:hover {
     line-height: 100px;
     font-weight: 500;
     font-family: var(--font-space-grotesk);
-    color: #3532d1;
+    color: var(--color-blueviolet);
     text-align: left;
     display: inline-block;
     white-space: nowrap;
@@ -4645,7 +4645,7 @@ button:hover {
   }
 
 
- 
+
   .ln_h {
     position: absolute;
     margin: auto;
@@ -4772,7 +4772,7 @@ height: auto;
   height: 0px;
   /*give each border a background color of black in css so that you don't need to animate it*/
   background-color:black;
-  
+
 }
 
 
@@ -4797,7 +4797,7 @@ height: auto;
 	position: absolute;
 	left: -2px;
 	top: -2px;
-	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094,
 		#0000ff, #00ff00,#ffff00, #ff0000);
 	background-size: 400%;
 	width: calc(100% + 4px);
@@ -4826,7 +4826,7 @@ height: auto;
   left: 0;
   width: 200px;
   height: 1px;
-  
+
 }
 
 .l3 {
@@ -4834,7 +4834,7 @@ height: auto;
   top: 0;
   height: 200px;
   width: 1px;
-  
+
 }
 
 .l4 {
@@ -4842,10 +4842,10 @@ height: auto;
   right: 0;
   width: 200px;
   height: 1px;
- 
+
 } */
 
-/* 
+/*
 .square {
   background: #101a70;
   display: block;
@@ -4853,19 +4853,19 @@ height: auto;
   height: auto;
   position: relative;
    top: 50%;
-  
 
- 
- 
+
+
+
 }
 .l4{
   position: absolute;
   background: transparent;
   width: 100%;
   height: 0px;
- 
+
   background-color:rgb(248, 244, 244);
-  
+
 }
 
 
