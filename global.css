@@ -101,3 +101,8 @@ body {
   --br-16xl: 35px;
 }
 
+a:-webkit-any-link {
+  cursor: pointer;
+  color: var(--color-white);
+  text-decoration: none;
+}
