@@ -333,12 +333,12 @@ t4.timeScale(4) //play faster
 //   });
 // });
 // Create a timeline
-const timeline1 = gsap.timeline();
+const timeline2 = gsap.timeline();
 
 // Iterate over each ".line" element
 gsap.utils.toArray(".line").forEach(line => {
   // Add animations to the timeline
-  timeline1.from(line, {
+  timeline2.from(line, {
     scaleX: 0,
     duration: 2,
     transformOrigin: "center center",
@@ -362,7 +362,7 @@ gsap.utils.toArray(".line1").forEach(line1 => {
   gsap.from(line1, {
     scaleX: 0,
     duration: 2,
-    transformOrigin: "left center",
+    transformOrigin: "center center",
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: line1,
@@ -393,15 +393,40 @@ gsap.utils.toArray(".line1").forEach(line1 => {
 // });
 
 // Create a timeline
+// const timeline = gsap.timeline();
+
+// // Iterate over each ".verticalline" element
+// gsap.utils.toArray(".verticalline").forEach(verticalline => {
+//   // Add animations to the timeline
+//   timeline.from(verticalline, {
+//     scaleX: 0,
+//     duration: 2,
+//     transformOrigin: "top center",
+//     ease: "power2.inOut",
+//     scrollTrigger: {
+//       trigger: verticalline,
+//       start: "top 90%",
+//       toggleActions: "play none none reverse",
+//       markers: true
+//     }
+//   })
+//   // Add another animation to the same timeline
+//   .to(verticalline, {
+//     opacity: 2,
+//     duration: 1,
+//     delay: 1 // Add a delay after the previous animation
+//   });
+// });
+
 const timeline = gsap.timeline();
 
 // Iterate over each ".verticalline" element
 gsap.utils.toArray(".verticalline").forEach(verticalline => {
   // Add animations to the timeline
   timeline.from(verticalline, {
-    scaleX: 0,
+    scaleY: 0, // Change scaleX to scaleY
     duration: 2,
-    transformOrigin: "center center",
+    transformOrigin: "top center",
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: verticalline,
@@ -412,8 +437,33 @@ gsap.utils.toArray(".verticalline").forEach(verticalline => {
   })
   // Add another animation to the same timeline
   .to(verticalline, {
-    opacity: 1,
+    opacity: 1, // Change opacity to 1
     duration: 1,
-    delay: 0 // Add a delay after the previous animation
+    delay: 1 // Add a delay after the previous animation
+  });
+});
+
+const timeline1 = gsap.timeline();
+
+// Iterate over each ".verticalline" element
+gsap.utils.toArray(".verticalline1").forEach(verticalline1 => {
+  // Add animations to the timeline
+  timeline1.from(verticalline1, {
+    scaleY: 0, // Change scaleX to scaleY
+    duration: 2,
+    transformOrigin: "top center",
+    ease: "power2.inOut",
+    scrollTrigger: {
+      trigger: verticalline1,
+      start: "top 90%",
+      toggleActions: "play none none reverse",
+      markers: true
+    }
+  })
+  // Add another animation to the same timeline
+  .to(verticalline1, {
+    opacity: 1, // Change opacity to 1
+    duration: 1,
+    delay: 1 // Add a delay after the previous animation
   });
 });
