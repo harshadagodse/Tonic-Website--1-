@@ -458,7 +458,6 @@
   }
   .frame-parent18 {
     align-self: stretch;
-    align-items: center;
     justify-content: space-evenly;
     gap: var(--gap-xl);
   }
@@ -470,6 +469,7 @@
     box-sizing: border-box;
   }
   .frame-parent17 {
+    margin-top: 100px;
     align-self: stretch;
     align-items: flex-end;
     padding: 0 132px;
