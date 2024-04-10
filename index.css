@@ -522,7 +522,7 @@
 }
 
 .recordings-studios {
-  width: 100%;
+  width: 80%;
   align-self: center;
   display: block;
   flex-direction: row;
@@ -3512,7 +3512,9 @@ button:hover {
     max-width: 80%;
     margin-right: 40px;
   } */
-
+  .recordings-studios {
+    width: 100%;
+  }
   .ellipse-shape1 {
     width: 95%;
   }
