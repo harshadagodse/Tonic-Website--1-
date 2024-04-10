@@ -1014,7 +1014,7 @@ li {
 
   .panel {
     display: block;
-    border: 1px solid #10a614;
+    /* border: 1px solid #10a614; */
   }
 
   .studio-details-inner {
