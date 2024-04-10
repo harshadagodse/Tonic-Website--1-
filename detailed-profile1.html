@@ -810,8 +810,8 @@
       if (videoFrame) {
         if (videoFrame.style.display === 'none') {
           videoFrame.style.display = 'block';
-          videoFrame.style.width = '100%'; // Set video width
-          videoFrame.style.height = ((videoFrame.style.width/4)*3); // Set video height
+          videoFrame.style.width =  '100%'// ((videoFrame.style.height/4)*3); // Set video width
+          videoFrame.style.height = '300px'; // Set video height
 
           // Hide image associated with the video
           const image = document.getElementById('image' + projectId.slice(-1));

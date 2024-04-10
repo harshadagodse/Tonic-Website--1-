@@ -9,7 +9,7 @@ ScrollTrigger.config({
     limitCallbacks: true,
     ignoreMobileResize: true
   });
- 
+
 
 let scrollTween = gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
@@ -20,7 +20,7 @@ let scrollTween = gsap.to(sections, {
     scrub: 1,
     // end: "+=3000",
     end: () => "+=" + document.querySelector(".container").offsetWidth,
-    //snap: 1 / (sections.length - 1),
+    snap: 1 / (sections.length - 1),
     markers: false,
   }
 });
