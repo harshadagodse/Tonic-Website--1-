@@ -255,13 +255,13 @@ leftLines.forEach((leftLine) => {
   if(leftLine.classList.contains('right')){
     console.warn('right');
     gsap.set(leftLine,{xPercent:-100})
-    
+
   } else{
     gsap.set(leftLine,{xPercent:100})
-    
+
   }
 
-  
+
   const leftAnimationSettings = {
     duration: 2,
     xPercent: 0,
@@ -326,7 +326,7 @@ gsap.utils.toArray(".line").forEach(line => {
     scrollTrigger: {
       trigger: line,
       start: "top 80%",
-   
+
       toggleActions: "play none none reverse",
         // markers:true
     }
@@ -445,7 +445,24 @@ gsap.utils.toArray(".line1").forEach(line1 => {
       trigger: line1,
       start: "top 90%",
       // end: "bottom bottom",
-   
+
+      toggleActions: "play none none reverse",
+        // markers:true
+    }
+  });
+});
+
+gsap.utils.toArray(".horizontal-line").forEach(line1 => {
+  gsap.from(line1, {
+    scaleX: 0,
+    duration: 2,
+    transformOrigin: "center center",
+    ease: "power2.inOut",
+    scrollTrigger: {
+      trigger: line1,
+      start: "top 90%",
+      // end: "bottom bottom",
+
       toggleActions: "play none none reverse",
         // markers:true
     }
