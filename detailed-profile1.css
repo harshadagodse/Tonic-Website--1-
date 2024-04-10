@@ -959,8 +959,8 @@
   position: relative;
   background-color: var(--color-black);
   overflow: hidden;
-  padding: 0 0 120px;
-  gap: 169px 0;
+  padding: 0px;
+  gap: 70px;
   letter-spacing: normal;
 }
 @media screen and (max-width: 1200px) {
@@ -1421,3 +1421,689 @@
   /* margin: 50px 0; */
   z-index: 1;
 }
+
+
+/* header css */
+
+.parent-services-frame-wrapper,
+.rectangle-container {
+  margin: 0;
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-13xl) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.rectangle-container {
+  width: 100%;
+  margin: 0 !important;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  flex-direction: row;
+  justify-content: center;
+  /* padding: var(--padding-11xl) var(--padding-xl) var(--padding-7xl); */
+  gap: 661px;
+  z-index: 99;
+}
+
+.component-child {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-gray-200);
+}
+
+.tonic_logo {
+  height: 94px;
+  width: 133px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+
+tonic_logo_black {
+  display: none;
+}
+
+.contact,
+.services,
+.studios,
+.team1 {
+  position: relative;
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.contact,
+.studios,
+.team1 {
+  cursor: pointer;
+}
+
+.parent-services-frame {
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 70px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-space-grotesk);
+}
+.verticalline {
+  height:350px;
+  width: 1px;
+  position: relative;
+  border-right: 1px solid var(--color-white);
+  box-sizing: border-box;
+  /* display: none; */
+}
+
+.verticalline1 {
+  height:350px;
+  width: 1px;
+  position: relative;
+  border-right: 1px solid var(--color-white);
+  box-sizing: border-box;
+  /* display: none; */
+}
+/* .vertical-line{
+  
+} */
+.horizontal-line {
+  height: 255px;
+  width: 1px;
+  position: relative;
+  border-right: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+  display: none;
+}
+.horizontal-line-pc {
+  height: 255px;
+  width: 100%;
+  position: relative;
+  border-right: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+  display: block;
+}
+.navbar {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+#navigationWrap {
+  display: none;
+}
+.navbar {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  top: 7%;
+  /* right: 20px; */
+  width: 45px;
+  height: 45px;
+  z-index: 10000;
+  color: white;
+}
+.banner-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* padding: 0 0 var(--padding-169xl); */
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+
+#navigationWrap {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: #3532D1;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  padding: 50px 0;
+  overflow: hidden;
+  font-family: var(--font-space-grotesk);
+  text-align: center;
+  justify-content: center;
+  /* Horizontally center the content within #navigationWrap */
+  align-items: center;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* Horizontally center the menu */
+  align-items: center;
+  margin-top: 35%;
+}
+
+@media screen and (max-width: 1225px) {
+  .rectangle-container {
+    gap: 0 330px;
+  }
+  .banner-container {
+    padding-bottom: 122px;
+    box-sizing: border-box;
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+  .get-in-touch-parent,
+  .social-media-icons {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 750px) {
+  .rectangle-container {
+  width: 1050px;
+  gap: 0 165px;
+}
+.get-in-touch-parent {
+  gap: 58px 0;
+}
+.footer {
+  padding-left: 54px;
+  box-sizing: border-box;
+}
+.banner-container {
+  padding-bottom: 79px;
+  box-sizing: border-box;
+}
+.parent-services-frame-wrapper {
+  display: none;
+}
+.footer {
+  padding-left: var(--padding-xl);
+  padding-top: var(--padding-21xl);
+  padding-bottom: var(--padding-5xl);
+  box-sizing: border-box;
+}
+.service-studio-contact-info-parent {
+  gap: 32px 0;
+}
+.instagram-twitter-section {
+  flex: 1;
+}
+}
+@media screen and (max-width: 450px) {
+.rectangle-container {
+  gap: 0 83px;
+}
+
+.get-in-touch-parent {
+  gap: 29px 0;
+}
+.service-studio-contact-info-parent {
+  gap: 16px 0;
+}
+.service-studio-contact-info-parent {
+  gap: 32px 0;
+}
+.get-in-touch-parent {
+  gap: 40px 0;
+}
+.footer {
+  padding-left: var(--padding-xl);
+  padding-top: var(--padding-21xl);
+  padding-bottom: var(--padding-5xl);
+  box-sizing: border-box;
+}
+.banner-container {
+  padding-bottom: 79px;
+  box-sizing: border-box;
+}
+
+.tonic_logo {
+  height: auto;
+  width: 90px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+  /* left: -6rem; */
+}
+
+.tonic_logo_black {
+  display: block;
+  height: 94px;
+  width: 133px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.group-button,
+.mobile-menu-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.contact-group,
+.mobile-menu {
+  width: 221px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.horizontal-line-menu{
+  height: 10px;
+  /* color: #fff; */
+  width: 45px;
+  position: relative;
+  border-left: 0px;
+  border-bottom: 2px solid var(--color-white);
+  box-sizing: border-box;
+  display: block;
+}
+.mobile-menu {
+  width: 100%;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 16.5px 10.6px 260.1px var(--padding-45xl);
+  gap: 22.4px;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-space-grotesk);
+}
+.services13,
+  .studios13 {
+    position: relative;
+    letter-spacing: 0.05em;
+    line-height: 26.3px;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  .get-in-touch1 {
+    font-size: var(--font-size-11xl);
+    line-height: 40px;
+  }
+  .get-in-touch1 {
+    font-size: 70px;
+    line-height: 60px;
+    padding-top: 30px;
+  }
+  .close {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    z-index: 20;
+    cursor: pointer;
+    color: #f7f7f8;
+  }
+  .horizontal-line-close{
+    height: 30px;
+    font-size: 40px;
+    font-family: var(--font-space-grotesk) ;
+    /* color: #fff; */
+    /* width: 45px;
+    position: relative;
+    border-left: 0px;
+    border-bottom: 1px solid var(--color-white);
+    box-sizing: border-box;
+    display: block; */
+  }
+  .instagram-parent {
+    flex-wrap: wrap;
+    gap: 1px;
+    flex-direction: column;
+  }
+  .instagram-parent {
+    flex-wrap: wrap;
+  }
+  .instagram,
+  .twitter {
+    font-size: var(--font-size-xl);
+    line-height: 80px;
+  }
+  .tonic-the-music {
+    align-self: stretch;
+    position: relative;
+    font-size: var(--font-size-sm);
+    letter-spacing: 0.05em;
+    line-height: 25px;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  
+.rectangle-container {
+  gap: 0 83px;
+  align-items: center;
+  justify-content: space-around;
+}
+.tonic-the-music-parent{
+  flex-wrap: wrap;
+  gap: 1px;
+  flex-direction: column;
+}
+}
+@media screen and (max-width: 760px) {
+.rectangle-container {
+  gap: 0 83px;
+}
+.twitter-logo {
+  gap: 0 20px;
+}
+.get-in-touch-parent {
+  gap: 29px 0;
+}
+.tonic-the-music {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.instagram,
+.twitter {
+  font-size: var(--font-size-xl);
+  line-height: 80px;
+}
+.instagram-parent {
+  flex-wrap: wrap;
+}
+.instagram-parent {
+  flex-wrap: wrap;
+  gap: 1px;
+  flex-direction: column;
+}
+.tonic-the-music-parent{
+  flex-wrap: wrap;
+  gap: 1px;
+  flex-direction: row;
+}
+.tonic_logo {
+  height: auto;
+  width: 90px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+  /* left: -6rem; */
+}
+.get-in-touch-parent {
+  gap: 40px 0;
+}
+.get-in-touch1 {
+  font-size: 70px;
+  line-height: 60px;
+  padding-top: 30px;
+}
+.tonic_logo_black {
+  display: block;
+  height: 94px;
+  width: 133px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.rectangle-container {
+  gap: 0 83px;
+  align-items: center;
+  justify-content: space-around;
+}
+.instagram,
+  .twitter {
+    font-size: var(--font-size-xl);
+    line-height: 80px;
+  }
+
+  .instagram-parent {
+    flex-wrap: wrap;
+  }
+  .get-in-touch1 {
+    font-size: 70px;
+    line-height: 60px;
+    padding-top: 30px;
+}
+
+.horizontal-line-menu{
+  height: 10px;
+  /* color: #fff; */
+  width: 45px;
+  position: relative;
+  border-left: 0px;
+  border-bottom: 2px solid var(--color-white);
+  box-sizing: border-box;
+  display: block;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* Horizontally center the menu */
+  align-items: center;
+  margin-top: 35%;
+}
+}
+
+
+/* footer */
+.ajinkya-neman-container,
+.services-footer,
+.test-2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.services-footer {
+  width: 308.4px;
+  height: 116.8px;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0 15.4px;
+  font-size: var(--font-size-lg);
+}
+.tonic-the-music-footer,
+.tonic-the-music {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-transform: uppercase;
+  z-index: 1;
+  /* flex-direction: row; */
+}
+.footer,
+.homepage {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+.footer {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-81xl);
+  color: var(--color-white);
+  font-family: var(--font-space-grotesk);
+  background-color: var(--color-blueviolet);
+}
+.frame-wrapper2,
+.get-in-touch-parent,
+.service-studio-contact-info-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.get-in-touch-parent {
+  width: 100%;
+  flex-direction: column;
+  gap: 80px 0;
+  min-width: 654px;
+}
+.get-in-touch1 {
+  align-self: stretch;
+  height: 100%;
+  position: relative;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.frame-wrapper2,
+.get-in-touch-parent,
+.service-studio-contact-info-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frame-wrapper2 {
+  width:100%;
+  flex-direction: row;
+  padding: 0 var(--padding-7xs);
+  /* box-sizing: border-box; */
+  font-size: var(--font-size-base);
+}
+.service-studio-contact-info-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 16px 0;
+}
+.service-studio-contact-info {
+  width: 414px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.service-studio-contact-info-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 16px 0;
+}
+.contact1,
+.services1,
+.studios1,
+.team2 {
+  position: relative;
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.services-studios-team-contact1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 29px 0 0;
+  box-sizing: border-box;
+  /* min-width: 240px;
+  max-width: 40%; */
+}
+.instagram-parent,
+.social-media-icons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.instagram-parent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 16px;
+}
+.instagram-twitter-section {
+  height: 134px;
+  width: 134px;
+  position: relative;
+  border-radius: 100%;
+  min-width: 134px;
+}
+.instagram-twitter-section1 {
+  /* height: 134px;
+  width: 134px; */
+  position: relative;
+  border-radius: 100%;
+  min-width: 134px;
+}
+.tonic-the-music-parent{
+  display: flex;
+  align-self: stretch;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.tonic-the-music-footer,
+.tonic-the-music {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-transform: uppercase;
+  z-index: 1;
+  /* flex-direction: row; */
+}
+.instagram,
+.twitter {
+  /* flex: 1; */
+  position: relative;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
+  display: inline-block;
+  min-width: 122px;
+  z-index: 1;
+}
+/* .component-child {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-gray-200);
+} */
