@@ -3336,10 +3336,14 @@ button:hover {
     line-height: 80px;
   }
 
+  /* .instagram-parent {
+    flex-wrap: wrap;
+  } */
   .instagram-parent {
     flex-wrap: wrap;
+    gap: 1px;
+    flex-direction: column;
   }
-
   .footer {
     padding-left: var(--padding-xl);
     padding-top: var(--padding-21xl);
@@ -4330,7 +4334,7 @@ button:hover {
   .instagram-parent {
     flex-wrap: wrap;
     gap: 1px;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .what-people-are-saying {
