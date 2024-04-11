@@ -61,6 +61,21 @@
   color: var(--color-white);
   font-family: var(--font-space-grotesk);
 }
+.atmos-equiped-studio {
+  align-self: stretch;
+  position: relative;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.studio-group {
+  position: absolute;
+  top: 1px;
+  left: 371px;
+  background-color: var(--color-blueviolet);
+  width: 219px;
+  height: 3px;
+  z-index: 1;
+}
 .project-name,
 .rectangle-parent8 {
   display: flex;
@@ -109,6 +124,7 @@
   padding: 0 var(--padding-11xs);
   box-sizing: border-box;
   max-width: 100%;
+  color: white;
   font-size: var(--font-size-45xl);
 }
 .designation1 {
@@ -118,6 +134,7 @@
   font-weight: 500;
   font-size: 18px;
   z-index: 2;
+  color: white;
 }
 .lorem-ipsum-text {
   width: 163px;
@@ -127,6 +144,7 @@
   justify-content: flex-start;
   padding: 0 var(--padding-11xs);
   box-sizing: border-box;
+  color:white;
 }
 .lorem-ipsum-dolor {
   align-self: stretch;
@@ -134,6 +152,7 @@
   line-height: 25px;
   font-weight: 300;
   z-index: 2;
+  color: white;
 }
 .frame-parent10 {
   width: 378px;
@@ -1071,99 +1090,7 @@
     gap: 84px 0;
   }
 }
-@media screen and (max-width: 450px) {
-  .rectangle-parent8 {
-    gap: 0 83px;
-  }
-  .sachin-puthran7 {
-    font-size: var(--font-size-19xl);
-    line-height: 42px;
-  }
-  .frame-with-text1 {
-    gap: 97px 0;
-    padding-bottom: var(--padding-5xl);
-    box-sizing: border-box;
-  }
-  .client,
-  .project-011,
-  .project-021 {
-    font-size: var(--font-size-lg);
-    line-height: 22px;
-  }
-  .client {
-    font-size: var(--font-size-base);
-  }
-  .project-02-parent {
-    gap: 15px 0;
-  }
-  .twitter-icon {
-    gap: 0 21px;
-  }
-  .rectangle-parent10 {
-    gap: 25px 0;
-  }
-  .project-031,
-  .project-041,
-  .project-051,
-  .project-061 {
-    font-size: var(--font-size-lg);
-    line-height: 22px;
-  }
-  .project-rectangle {
-    gap: 1px;
-  }
-  .get-in-touch5 {
-    font-size: var(--font-size-11xl);
-    line-height: 40px;
-  }
-  .contact-info-frame {
-    flex-wrap: wrap;
-  }
-  .services-contacts {
-    gap: 16px 0;
-  }
-  .instagram4,
-  .twitter4 {
-    font-size: var(--font-size-xl);
-    line-height: 80px;
-  }
-  .footer-frame3 {
-    flex-wrap: wrap;
-  }
-  .footer4 {
-    gap: var(--gap-7xl);
-    padding-left: var(--padding-xl);
-    padding-top: var(--padding-21xl);
-    padding-bottom: var(--padding-5xl);
-    box-sizing: border-box;
-  }
-  .detailed-profile1 {
-    gap: 42px 0;
-  }
-  .rectangle-parent9 {
-    width: 100%;
-  }
-  .footer-text-parent {
-    width: 100%;
-  }
-  .project-img {
-    width: 100%;
-    margin: 0px;
-  }
-  .project-01-parent{
-    width: 100%;
-  }
-  .connect-easily-through20 {
-    width: 100%;
-    position: relative;
-  }
-  .connect-easily-through22{
-    width: 100%;
-  }
-  .connect-easily-through22{
-    width: 100%;
-  }
-}
+
 /* .footer-text {
 
   border: 1px solid #ccc;
@@ -1255,7 +1182,22 @@
 .rows:hover{
   background-color: var(--color-blueviolet);
 }
+.contact,
+.services,
+.studios,
+.team1 {
+  position: relative;
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-transform: uppercase;
+  z-index: 1;
+}
 
+.contact,
+.studios,
+.team1 {
+  cursor: pointer;
+}
 /* @media(max-width: 760px) {
 	.rows {
 		height: auto;
@@ -1451,11 +1393,18 @@
   gap: 661px;
   z-index: 99;
 }
-
+.banner-1-icon {
+  height: 900px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
 .component-child {
   height: 100%;
   width: 100%;
-  position: relative;
+  position: absolute;
   margin: 0 !important;
   top: 0;
   right: 0;
@@ -1472,7 +1421,7 @@
   z-index: 1;
 }
 
-tonic_logo_black {
+.tonic_logo_black {
   display: none;
 }
 
@@ -1553,17 +1502,7 @@ tonic_logo_black {
 #navigationWrap {
   display: none;
 }
-.navbar {
-  display: block;
-  cursor: pointer;
-  position: relative;
-  top: 7%;
-  /* right: 20px; */
-  width: 45px;
-  height: 45px;
-  z-index: 10000;
-  color: white;
-}
+
 .banner-container {
   align-self: stretch;
   display: flex;
@@ -1576,340 +1515,15 @@ tonic_logo_black {
 }
 
 
-#navigationWrap {
-  display: none;
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  background: #3532D1;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  padding: 50px 0;
-  overflow: hidden;
-  font-family: var(--font-space-grotesk);
-  text-align: center;
-  justify-content: center;
-  /* Horizontally center the content within #navigationWrap */
-  align-items: center;
-}
-.menu {
+
+/* .menu {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* Horizontally center the menu */
+  /* Horizontally center the menu 
   align-items: center;
   margin-top: 35%;
-}
-
-@media screen and (max-width: 1225px) {
-  .rectangle-container {
-    gap: 0 330px;
-  }
-  .banner-container {
-    padding-bottom: 122px;
-    box-sizing: border-box;
-  }
-  .footer {
-    flex-wrap: wrap;
-  }
-  .get-in-touch-parent,
-  .social-media-icons {
-    flex: 1;
-  }
-}
-@media screen and (max-width: 750px) {
-  .rectangle-container {
-  width: 1050px;
-  gap: 0 165px;
-}
-.get-in-touch-parent {
-  gap: 58px 0;
-}
-.footer {
-  padding-left: 54px;
-  box-sizing: border-box;
-}
-.banner-container {
-  padding-bottom: 79px;
-  box-sizing: border-box;
-}
-.parent-services-frame-wrapper {
-  display: none;
-}
-.footer {
-  padding-left: var(--padding-xl);
-  padding-top: var(--padding-21xl);
-  padding-bottom: var(--padding-5xl);
-  box-sizing: border-box;
-}
-.service-studio-contact-info-parent {
-  gap: 32px 0;
-}
-.instagram-twitter-section {
-  flex: 1;
-}
-}
-@media screen and (max-width: 450px) {
-.rectangle-container {
-  gap: 0 83px;
-}
-
-.get-in-touch-parent {
-  gap: 29px 0;
-}
-.service-studio-contact-info-parent {
-  gap: 16px 0;
-}
-.service-studio-contact-info-parent {
-  gap: 32px 0;
-}
-.get-in-touch-parent {
-  gap: 40px 0;
-}
-.footer {
-  padding-left: var(--padding-xl);
-  padding-top: var(--padding-21xl);
-  padding-bottom: var(--padding-5xl);
-  box-sizing: border-box;
-}
-.banner-container {
-  padding-bottom: 79px;
-  box-sizing: border-box;
-}
-
-.tonic_logo {
-  height: auto;
-  width: 90px;
-  position: relative;
-  object-fit: cover;
-  z-index: 1;
-  /* left: -6rem; */
-}
-
-.tonic_logo_black {
-  display: block;
-  height: 94px;
-  width: 133px;
-  position: relative;
-  object-fit: cover;
-  z-index: 1;
-}
-.group-button,
-.mobile-menu-inner {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.contact-group,
-.mobile-menu {
-  width: 221px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 var(--padding-xl) 0 0;
-  box-sizing: border-box;
-  position: relative;
-}
-.horizontal-line-menu{
-  height: 10px;
-  /* color: #fff; */
-  width: 45px;
-  position: relative;
-  border-left: 0px;
-  border-bottom: 2px solid var(--color-white);
-  box-sizing: border-box;
-  display: block;
-}
-.mobile-menu {
-  width: 100%;
-  background-color: var(--color-white);
-  overflow: hidden;
-  flex-direction: column;
-  padding: 16.5px 10.6px 260.1px var(--padding-45xl);
-  gap: 22.4px;
-  letter-spacing: normal;
-  text-align: center;
-  font-size: var(--font-size-11xl);
-  color: var(--color-gray-300);
-  font-family: var(--font-space-grotesk);
-}
-.services13,
-  .studios13 {
-    position: relative;
-    letter-spacing: 0.05em;
-    line-height: 26.3px;
-    text-transform: uppercase;
-    z-index: 1;
-  }
-  .get-in-touch1 {
-    font-size: var(--font-size-11xl);
-    line-height: 40px;
-  }
-  .get-in-touch1 {
-    font-size: 70px;
-    line-height: 60px;
-    padding-top: 30px;
-  }
-  .close {
-    display: none;
-    opacity: 0;
-    position: fixed;
-    top: 40px;
-    right: 20px;
-    width: 45px;
-    height: 45px;
-    z-index: 20;
-    cursor: pointer;
-    color: #f7f7f8;
-  }
-  .horizontal-line-close{
-    height: 30px;
-    font-size: 40px;
-    font-family: var(--font-space-grotesk) ;
-    /* color: #fff; */
-    /* width: 45px;
-    position: relative;
-    border-left: 0px;
-    border-bottom: 1px solid var(--color-white);
-    box-sizing: border-box;
-    display: block; */
-  }
-  .instagram-parent {
-    flex-wrap: wrap;
-    gap: 1px;
-    flex-direction: column;
-  }
-  .instagram-parent {
-    flex-wrap: wrap;
-  }
-  .instagram,
-  .twitter {
-    font-size: var(--font-size-xl);
-    line-height: 80px;
-  }
-  .tonic-the-music {
-    align-self: stretch;
-    position: relative;
-    font-size: var(--font-size-sm);
-    letter-spacing: 0.05em;
-    line-height: 25px;
-    text-transform: uppercase;
-    z-index: 1;
-  }
-  
-.rectangle-container {
-  gap: 0 83px;
-  align-items: center;
-  justify-content: space-around;
-}
-.tonic-the-music-parent{
-  flex-wrap: wrap;
-  gap: 1px;
-  flex-direction: column;
-}
-}
-@media screen and (max-width: 760px) {
-.rectangle-container {
-  gap: 0 83px;
-}
-.twitter-logo {
-  gap: 0 20px;
-}
-.get-in-touch-parent {
-  gap: 29px 0;
-}
-.tonic-the-music {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-sm);
-  letter-spacing: 0.05em;
-  line-height: 25px;
-  text-transform: uppercase;
-  z-index: 1;
-}
-.instagram,
-.twitter {
-  font-size: var(--font-size-xl);
-  line-height: 80px;
-}
-.instagram-parent {
-  flex-wrap: wrap;
-}
-.instagram-parent {
-  flex-wrap: wrap;
-  gap: 1px;
-  flex-direction: column;
-}
-.tonic-the-music-parent{
-  flex-wrap: wrap;
-  gap: 1px;
-  flex-direction: row;
-}
-.tonic_logo {
-  height: auto;
-  width: 90px;
-  position: relative;
-  object-fit: cover;
-  z-index: 1;
-  /* left: -6rem; */
-}
-.get-in-touch-parent {
-  gap: 40px 0;
-}
-.get-in-touch1 {
-  font-size: 70px;
-  line-height: 60px;
-  padding-top: 30px;
-}
-.tonic_logo_black {
-  display: block;
-  height: 94px;
-  width: 133px;
-  position: relative;
-  object-fit: cover;
-  z-index: 1;
-}
-.rectangle-container {
-  gap: 0 83px;
-  align-items: center;
-  justify-content: space-around;
-}
-.instagram,
-  .twitter {
-    font-size: var(--font-size-xl);
-    line-height: 80px;
-  }
-
-  .instagram-parent {
-    flex-wrap: wrap;
-  }
-  .get-in-touch1 {
-    font-size: 70px;
-    line-height: 60px;
-    padding-top: 30px;
-}
-
-.horizontal-line-menu{
-  height: 10px;
-  /* color: #fff; */
-  width: 45px;
-  position: relative;
-  border-left: 0px;
-  border-bottom: 2px solid var(--color-white);
-  box-sizing: border-box;
-  display: block;
-}
-.menu {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  /* Horizontally center the menu */
-  align-items: center;
-  margin-top: 35%;
-}
-}
+} */
 
 
 /* footer */
@@ -1971,7 +1585,7 @@ tonic_logo_black {
   width: 100%;
   flex-direction: column;
   gap: 80px 0;
-  min-width: 654px;
+  /* min-width: 654px; */
 }
 .get-in-touch1 {
   align-self: stretch;
@@ -2005,7 +1619,7 @@ tonic_logo_black {
   gap: 16px 0;
 }
 .service-studio-contact-info {
-  width: 414px;
+  width: 300px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -2107,3 +1721,516 @@ tonic_logo_black {
   left: 0;
   background-color: var(--color-gray-200);
 } */
+
+
+
+@media screen and (max-width: 1225px) {
+  .rectangle-container {
+    gap: 0 330px;
+  }
+  .banner-container {
+    padding-bottom: 122px;
+    box-sizing: border-box;
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+  .get-in-touch-parent,
+  .social-media-icons {
+    flex: 1;
+  }
+ 
+}
+
+
+@media screen and (max-width: 760px) {
+.rectangle-container {
+  gap: 0 83px;
+}
+.twitter-logo {
+  gap: 0 20px;
+}
+.get-in-touch-parent {
+  gap: 29px 0;
+}
+.component-child {
+  position: absolute;
+}
+.tonic-the-music {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.instagram,
+.twitter {
+  font-size: var(--font-size-xl);
+  line-height: 80px;
+}
+.instagram-parent {
+  flex-wrap: wrap;
+}
+.instagram-parent {
+  flex-wrap: wrap;
+  gap: 1px;
+  flex-direction: column;
+}
+.tonic-the-music-parent{
+  flex-wrap: wrap;
+  gap: 1px;
+  flex-direction: row;
+}
+.tonic_logo {
+  height: auto;
+  width: 90px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+  /* left: -6rem; */
+}
+.get-in-touch-parent {
+  gap: 40px 0;
+}
+.get-in-touch1 {
+  font-size: 70px;
+  line-height: 60px;
+  padding-top: 30px;
+}
+.tonic_logo_black {
+  display: block;
+  height: 94px;
+  width: 133px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.rectangle-container {
+  gap: 0 83px;
+  align-items: center;
+  justify-content: space-around;
+}
+.instagram,
+  .twitter {
+    font-size: var(--font-size-xl);
+    line-height: 80px;
+  }
+
+  .instagram-parent {
+    flex-wrap: wrap;
+  }
+  .get-in-touch1 {
+    font-size: 70px;
+    line-height: 60px;
+    padding-top: 30px;
+}
+
+.horizontal-line-menu{
+  height: 10px;
+  /* color: #fff; */
+  width: 45px;
+  position: relative;
+  border-left: 0px;
+  border-bottom: 2px solid var(--color-white);
+  box-sizing: border-box;
+  display: block;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* Horizontally center the menu */
+  align-items: center;
+  margin-top: 35%;
+}
+.navbar {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  top: 7%;
+  /* right: 20px; */
+  width: 45px;
+  height: 45px;
+  z-index: 10000;
+  color: white;
+}
+.close {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  z-index: 20;
+  cursor: pointer;
+  color: #f7f7f8;
+}
+.horizontal-line-close{
+  height: 30px;
+  font-size: 40px;
+  font-family: var(--font-space-grotesk) ;
+  /* color: #fff; */
+  /* width: 45px;
+  position: relative;
+  border-left: 0px;
+  border-bottom: 1px solid var(--color-white);
+  box-sizing: border-box;
+  display: block; */
+}
+#navigationWrap {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: #3532D1;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  padding: 50px 0;
+  overflow: hidden;
+  font-family: var(--font-space-grotesk);
+  text-align: center;
+  justify-content: center;
+  /* Horizontally center the content within #navigationWrap */
+  align-items: center;
+}
+
+}
+
+@media screen and (max-width: 750px) {
+  .rectangle-container {
+  width: 1050px;
+  gap: 0 165px;
+}
+.get-in-touch-parent {
+  gap: 58px 0;
+}
+.footer {
+  padding-left: 54px;
+  box-sizing: border-box;
+}
+.banner-container {
+  padding-bottom: 79px;
+  box-sizing: border-box;
+}
+.parent-services-frame-wrapper {
+  display: none;
+}
+.component-child {
+  position: absolute;
+}
+.footer {
+  padding-left: var(--padding-xl);
+  padding-top: var(--padding-21xl);
+  padding-bottom: var(--padding-5xl);
+  box-sizing: border-box;
+}
+.service-studio-contact-info-parent {
+  gap: 32px 0;
+}
+.instagram-twitter-section {
+  flex: 1;
+}
+}
+@media screen and (max-width: 450px) {
+  .rectangle-container {
+    gap: 0 83px;
+  }
+  
+  .get-in-touch-parent {
+    gap: 29px 0;
+  }
+  .service-studio-contact-info {
+    flex-wrap: wrap;
+  }
+
+  .service-studio-contact-info-parent {
+    gap: 1px 0;
+  }
+  
+  .get-in-touch-parent {
+    gap: 40px 0;
+  }
+  .component-child {
+    position: absolute;
+  }
+  .footer {
+    padding-left: var(--padding-xl);
+    padding-top: var(--padding-21xl);
+    padding-bottom: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+  .banner-container {
+    padding-bottom: 79px;
+    box-sizing: border-box;
+  }
+  
+  .tonic_logo {
+    height: auto;
+    width: 90px;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+    /* left: -6rem; */
+  }
+  
+  .tonic_logo_black {
+    display: block;
+    height: 94px;
+    width: 133px;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .group-button,
+  .mobile-menu-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .contact-group,
+  .mobile-menu {
+    width: 221px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-xl) 0 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .horizontal-line-menu{
+    height: 10px;
+    /* color: #fff; */
+    width: 45px;
+    position: relative;
+    border-left: 0px;
+    border-bottom: 2px solid var(--color-white);
+    box-sizing: border-box;
+    display: block;
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 1000;
+    /* Horizontally center the menu */
+    align-items: center;
+    margin-top: 35%;
+  }
+  .mobile-menu {
+    width: 100%;
+    background-color: var(--color-white);
+    overflow: hidden;
+    flex-direction: column;
+    padding: 16.5px 10.6px 260.1px var(--padding-45xl);
+    gap: 22.4px;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: var(--font-size-11xl);
+    color: var(--color-gray-300);
+    font-family: var(--font-space-grotesk);
+  }
+  .services13,
+    .studios13 {
+      position: relative;
+      letter-spacing: 0.05em;
+      line-height: 26.3px;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+    .get-in-touch1 {
+      font-size: var(--font-size-11xl);
+      line-height: 40px;
+    }
+    .get-in-touch1 {
+      font-size: 70px;
+      line-height: 60px;
+      padding-top: 30px;
+    }
+    .close {
+      display: none;
+      opacity: 0;
+      position: fixed;
+      top: 40px;
+      right: 20px;
+      width: 45px;
+      height: 45px;
+      z-index: 20;
+      cursor: pointer;
+      color: #f7f7f8;
+    }
+    .horizontal-line-close{
+      height: 30px;
+      font-size: 40px;
+      font-family: var(--font-space-grotesk) ;
+      /* color: #fff; */
+      /* width: 45px;
+      position: relative;
+      border-left: 0px;
+      border-bottom: 1px solid var(--color-white);
+      box-sizing: border-box;
+      display: block; */
+    }
+    .instagram-parent {
+      flex-wrap: wrap;
+      gap: 1px;
+      flex-direction: column;
+    }
+    .instagram-parent {
+      flex-wrap: wrap;
+    }
+    .instagram,
+    .twitter {
+      font-size: var(--font-size-xl);
+      line-height: 40px;
+    }
+    .tonic-the-music {
+      align-self: stretch;
+      position: relative;
+      font-size: var(--font-size-sm);
+      letter-spacing: 0.05em;
+      line-height: 25px;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+    
+  .rectangle-container {
+    gap: 0 83px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .tonic-the-music-parent{
+    flex-wrap: wrap;
+    gap: 1px;
+    flex-direction: column;
+  }
+
+
+
+  .rectangle-parent8 {
+    gap: 0 83px;
+  }
+  .sachin-puthran7 {
+    font-size: var(--font-size-19xl);
+    line-height: 42px;
+  }
+  .frame-with-text1 {
+    gap: 97px 0;
+    padding-bottom: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+  .client,
+  .project-011,
+  .project-021 {
+    font-size: var(--font-size-lg);
+    line-height: 22px;
+  }
+  .client {
+    font-size: var(--font-size-base);
+  }
+  .project-02-parent {
+    gap: 15px 0;
+  }
+  .twitter-icon {
+    gap: 0 21px;
+  }
+  .rectangle-parent10 {
+    gap: 25px 0;
+  }
+  .project-031,
+  .project-041,
+  .project-051,
+  .project-061 {
+    font-size: var(--font-size-lg);
+    line-height: 22px;
+  }
+  .project-rectangle {
+    gap: 1px;
+  }
+  .get-in-touch5 {
+    font-size: var(--font-size-11xl);
+    line-height: 40px;
+  }
+  .contact-info-frame {
+    flex-wrap: wrap;
+  }
+  .services-contacts {
+    gap: 16px 0;
+  }
+  .instagram4,
+  .twitter4 {
+    font-size: var(--font-size-xl);
+    line-height: 80px;
+  }
+  .footer-frame3 {
+    flex-wrap: wrap;
+  }
+  .footer4 {
+    gap: var(--gap-7xl);
+    padding-left: var(--padding-xl);
+    padding-top: var(--padding-21xl);
+    padding-bottom: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+  .detailed-profile1 {
+    gap: 42px 0;
+  }
+  .rectangle-parent9 {
+    width: 100%;
+  }
+  .footer-text-parent {
+    width: 100%;
+  }
+  .project-img {
+    width: 100%;
+    margin: 0px;
+  }
+  .project-01-parent{
+    width: 100%;
+  }
+  .connect-easily-through20 {
+    width: 100%;
+    position: relative;
+  }
+  .connect-easily-through22{
+    width: 100%;
+  }
+  .connect-easily-through22{
+    width: 100%;
+  }
+  .navbar {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: 7%;
+    /* right: 20px; */
+    width: 45px;
+    height: 45px;
+    z-index: 10000;
+    color: white;
+  }
+  #navigationWrap {
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: #3532D1;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    padding: 50px 0;
+    overflow: hidden;
+    font-family: var(--font-space-grotesk);
+    text-align: center;
+    justify-content: center;
+    /* Horizontally center the content within #navigationWrap */
+    align-items: center;
+  }
+  }
+
+
