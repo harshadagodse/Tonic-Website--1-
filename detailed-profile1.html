@@ -53,12 +53,25 @@
     <section class="banner-container">
       <img class="banner-1-icon" alt=""   src="./public/Profile banner 1920x900px/Lucky Dhami 1920x900px.png" />
     </section>
-    <!-- <section class="tom-pottiger-yxzl9lnxsna-unspl-group">
-      <img class="tom-pottiger-yxzl9lnxsna-unspl-icon4" alt=""
-        src="./public/Profile banner 1920x900px/Lucky Dhami 1920x900px.png" />
-
-      
-    </section> -->
+    
+    <div class="project-info">
+      <div class="frame-parent10">
+        <div class="sachin-puthran-wrapper">
+          <h1 class="sachin-puthran7">
+            <p class="sachin7">Lucky</p>
+            <p class="puthran7">Dhami</p>
+          </h1>
+        </div>
+        <div class="lorem-ipsum-text">
+          <div class="designation1">Designation</div>
+        </div>
+        <div class="lorem-ipsum-dolor">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+      </div>
+    </div>
+    <!-- </section> -->
     <section class="project-rectangle">
       <!-- <div class="footer-frame-wrapper">
         <div class="footer-frame1">
@@ -760,7 +773,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
+    
     const lenis = new Lenis()
 
     lenis.on('scroll', (e) => {
@@ -886,6 +901,25 @@
       prevFooterContentId = footerContentId; // Update the previous footer content ID
     }
   </script>
+  <script>
+var navigation = new TimelineLite({paused:true, reversed:true});
+
+navigation.to("#navigationWrap", 0.5, {opacity: 1, display: 'block'})
+          .to(".navbar", 0.3, {opacity: 0}, "-=0.1")
+          .to(".close", 0.3, {display: "block", opacity: 1}, "-=0.1")
+          .from(".menu", 0.5, {opacity: 0, y: 30})
+          .from(".social", 0.5, {opacity: 0});
+
+  $(".navbar, .close").click (function() {
+  console.log("clicked");
+  navigation.reversed() ? navigation.play() : navigation.reverse();
+  if ($('navigationWrap').hasClass('menu-open')) {
+    $('navigationWrap').removeClass('menu-open');
+  } else {
+    $('navigationWrap').addClass('menu-open');
+  }
+});
+</script>
 
 
 
