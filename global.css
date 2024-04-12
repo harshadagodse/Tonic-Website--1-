@@ -529,8 +529,71 @@ nav a:hover {
   z-index: 10000;
   color: white;
 }
+
+.parent-services-frame-wrapper {
+  display: none;
 }
 
+.tonic_logo {
+  height: auto;
+  width: 90px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+  /* left: -6rem;*/
+}
+.horizontal-line-menu {
+  height: 10px;
+  /* color: #fff; */
+  width: 45px;
+  position: relative;
+  border-left: 0px;
+  border-bottom: 2px solid var(--color-white);
+  box-sizing: border-box;
+  display: block;
+}
+#navigationWrap {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: var(--color-blueviolet);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  padding: 50px 0;
+  overflow: hidden;
+  font-family: var(--font-space-grotesk);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.close {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  z-index: 20;
+  cursor: pointer;
+  color: #f7f7f8;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35%;
+}
+.horizontal-line-close {
+  height: 30px;
+  font-size: 40px;
+  font-family: var(--font-space-grotesk);
+  /* color: #fff; */
+}
+}
 @media screen and (max-width: 450px){
   .rectangle-container {
       gap: 0 83px;
@@ -551,4 +614,55 @@ nav a:hover {
     z-index: 10000;
     color: white;
   }
-  }
+  .horizontal-line-menu {
+    height: 10px;
+    /* color: #fff; */
+    width: 45px;
+    position: relative;
+    border-left: 0px;
+    border-bottom: 2px solid var(--color-white);
+    box-sizing: border-box;
+    display: block;
+}
+#navigationWrap {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: var(--color-blueviolet);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  padding: 50px 0;
+  overflow: hidden;
+  font-family: var(--font-space-grotesk);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.close {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  z-index: 20;
+  cursor: pointer;
+  color: #f7f7f8;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35%;
+}
+.horizontal-line-close {
+  height: 30px;
+  font-size: 40px;
+  font-family: var(--font-space-grotesk);
+  /* color: #fff; */
+}
+}

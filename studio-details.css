@@ -355,7 +355,6 @@ li {
 }
 
 .sub-studio-title {
-  flex: 1;
   position: relative;
   line-height: 93px;
   text-transform: uppercase;
@@ -367,7 +366,7 @@ li {
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  width: 289.1px;
+  width: 100%;
   padding-top: 60px;
   gap: var(--gap-4xs);
   font-size: var(--font-size-base);
@@ -646,7 +645,7 @@ li {
   flex: 1;
   /* flex-direction: column; */
   align-self: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .footer-child2 {
@@ -928,7 +927,7 @@ li {
   }
 
   .sub-studio-title {
-    font-size: var(--font-size-11xl);
+    font-size: var(--font-size-45xl);
     line-height: 40px;
   }
 
@@ -939,6 +938,7 @@ li {
 
   .studio-frame {
     gap: 33px 66px;
+    width: 100%;
   }
 
   .t-031 {
