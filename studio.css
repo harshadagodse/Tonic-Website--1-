@@ -1326,7 +1326,6 @@ header {
   top: 0px;
   left: 0px;
   padding: 6px 10px 10px 10px;
-  border-bottom-right-radius: 26px;
   z-index: 100;
   background-color: rgba(0,0,0,0.5);
   will-change: transform;
@@ -1339,9 +1338,9 @@ header {
   margin: 40vh auto 50vh;
 }
 
-/* SCROLL DOWN */ 
+/* SCROLL DOWN */
 .scroll-down {
-  position: absolute; 
+  position: absolute;
   bottom: 30px;
   left: 50%;
   transform: translate(-50%, 0);

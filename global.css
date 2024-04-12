@@ -1,6 +1,7 @@
 body {
   margin: 0;
   line-height: normal;
+  background-color: #000;
 }
 
 :root {
@@ -132,6 +133,7 @@ a:-webkit-any-link {
   flex-direction: row;
   justify-content: center;
   /* padding: var(--padding-11xl) var(--padding-xl) var(--padding-7xl); */
+  background-color: rgba(0,0,0,0.5);
   gap: 661px;
   z-index: 99;
 }
@@ -393,7 +395,7 @@ nav a:hover {
   gap: 16px 0;
 }
 .service-studio-contact-info {
-  width: 300px;
+  width: 414px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -510,10 +512,7 @@ nav a:hover {
 .rectangle-container {
     gap: 0 83px;
 }
-}
 
-
-@media screen and (max-width: 750px){
 .rectangle-container {
     width: 1050px;
     gap: 0;
@@ -593,6 +592,108 @@ nav a:hover {
   font-family: var(--font-space-grotesk);
   /* color: #fff; */
 }
+
+.footer {
+  padding-left: var(--padding-xl);
+  padding-top: var(--padding-21xl);
+  padding-bottom: var(--padding-5xl);
+  box-sizing: border-box;
+  gap: 0;
+}
+.service-studio-contact-info-parent {
+  gap: 16px 0;
+}
+.instagram-twitter-section {
+  flex: 1;
+}
+.get-in-touch-parent {
+  gap: 58px 0;
+}
+
+.banner-container {
+  padding-bottom: 79px;
+  box-sizing: border-box;
+}
+.parent-services-frame-wrapper {
+  display: none;
+}
+.component-child {
+  position: absolute;
+}
+
+.instagram-twitter-section {
+  flex: 1;
+}
+
+.rectangle-container {
+  gap: 0 83px;
+}
+.twitter-logo {
+  gap: 0 20px;
+}
+.get-in-touch-parent {
+  gap: 29px 0;
+}
+
+.component-child {
+  position: absolute;
+}
+.tonic-the-music {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.instagram, .twitter {
+  font-size: var(--font-size-xl);
+  line-height: 30px;
+}
+.instagram-parent {
+  flex-wrap: wrap;
+}
+.instagram-parent {
+  flex-wrap: wrap;
+  gap: 1px;
+  flex-direction: column;
+}
+.tonic-the-music-parent{
+  flex-wrap: wrap;
+  gap: 1px;
+  flex-direction: row;
+}
+.tonic_logo {
+  height: auto;
+  width: 90px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+  /* left: -6rem; */
+}
+.get-in-touch-parent {
+  gap: 40px 0;
+}
+.get-in-touch1 {
+  font-size: 70px;
+  line-height: 60px;
+  padding-top: 30px;
+}
+.tonic_logo_black {
+  display: block;
+  height: 94px;
+  width: 133px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.rectangle-container {
+  gap: 0 83px;
+  align-items: center;
+  justify-content: space-around;
+}
+
 }
 @media screen and (max-width: 450px){
   .rectangle-container {
