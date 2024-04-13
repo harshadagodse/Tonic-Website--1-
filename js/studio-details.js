@@ -1,3 +1,16 @@
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
 gsap.registerPlugin(ScrollTrigger);
 
 const container = document.querySelector(".container");
@@ -17,7 +30,7 @@ let scrollTween = gsap.to(sections, {
   scrollTrigger: {
     trigger: ".container",
     pin: true,
-    scrub: 1,
+    scrub: 0.1,
     // end: "+=3000",
     end: () => "+=" + document.querySelector(".container").offsetWidth,
     snap: 1 / (sections.length - 1),
@@ -30,7 +43,7 @@ gsap.to(mask, {
   scrollTrigger: {
     trigger: ".wrapper",
     start: "top left",
-    scrub: 1,
+    scrub: 0.1,
     markers:false,
     opacity:0
   }

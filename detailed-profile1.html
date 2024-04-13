@@ -49,7 +49,7 @@
     </div>
 
   </header>
-  <div class="detailed-profile1" id="smooth-content">
+  <div class="detailed-profile1">
 
     <section class="banner-container">
       <img class="banner-1-icon" alt=""   src="./public/Profile banner 1920x900px/Lucky Dhami 1920x900px.png" />
@@ -777,18 +777,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
 
-    const lenis = new Lenis()
+const lenis = new Lenis()
 
-    lenis.on('scroll', (e) => {
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
 
-    })
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
 
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf)
+requestAnimationFrame(raf)
 
   </script>
 <script>
